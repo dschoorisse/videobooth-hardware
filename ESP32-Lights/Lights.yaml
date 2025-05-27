@@ -1,0 +1,189 @@
+substitutions:
+  name: lights
+
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false # Set to false if you want a predictable name without MAC suffix for MQTT topics
+
+esp32:
+  board: m5stack-atom
+  framework:
+    type: esp-idf
+    version: 4.4.8
+    platform_version: 5.4.0
+
+logger:
+
+ota:
+  - platform: esphome
+    id: ota_esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  use_address: 192.168.2.54 # Static IP, ensure it's outside your DHCP range or reserved
+
+light:
+  - platform: esp32_rmt_led_strip
+    id: printer_leds
+    pin: GPIO26
+    chipset: SK6812
+    num_leds: 1
+    rgb_order: GRB
+    rmt_channel: 0
+    default_transition_length: 0.2s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1000ms
+          update_interval: 1000ms
+          min_brightness: 50%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 300ms
+          update_interval: 300ms
+          min_brightness: 25%
+          max_brightness: 100%
+  - platform: esp32_rmt_led_strip
+    id: front_leds
+    pin: GPIO27
+    chipset: SK6812
+    num_leds: 1
+    rgb_order: GRB
+    rmt_channel: 0
+    default_transition_length: 0.2s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1000ms
+          update_interval: 1000ms
+          min_brightness: 50%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 300ms
+          update_interval: 300ms
+          min_brightness: 25%
+          max_brightness: 100%
+
+captive_portal:
+mqtt:
+  id: mqtt_client
+  broker: "192.168.1.3"
+  port: 1883
+  username: !secret mqtt_videobooth_username
+  password: !secret mqtt_videobooth_password
+
+  on_connect:
+    then:
+      - mqtt.publish:
+          topic: "${name}/status"
+          payload: "online"
+          retain: true
+      - script.execute: printer_standby
+      - script.execute: front_standby
+
+  on_message:
+    - topic: "${name}/printer/command" # e.g., lights/printer/command
+      then:
+        - lambda: !lambda |-
+            ESP_LOGD("rgb_control", "Device '${name}'/printer received command payload: %s", x.c_str());
+            std::string payload_str = x;
+
+            if (payload_str == "STANDBY") {
+              id(printer_standby).execute();
+            } else if (payload_str == "PRINTING") {
+              id(printer_printing).execute();
+            } else if (payload_str == "FINISHED") {
+              id(printer_finished).execute();
+            } else if (payload_str == "OFF") {
+              id(printer_off).execute();
+            } else {
+              ESP_LOGW("rgb_control", "Device '${name}' received unknown command: %s", payload_str.c_str());
+            }
+
+    - topic: "${name}/front/command" # e.g., lights/printer/command
+      then:
+        - lambda: !lambda |-
+            ESP_LOGD("rgb_control", "Device '${name}'/front received command payload: %s", x.c_str());
+            std::string payload_str = x;
+
+            if (payload_str == "STANDBY") {
+              id(front_standby).execute();
+            } else if (payload_str == "ACTIVE") {
+              id(front_active).execute();
+            } else {
+              ESP_LOGW("rgb_control", "Device '${name}'/front received unknown command: %s", payload_str.c_str());
+            }
+
+
+# Define the scripts
+script:
+  - id: "printer_standby"
+    then:
+      - logger.log: "SCRIPT: printer_standby executing"
+      - light.turn_on:
+          id: printer_leds
+          red: 1.0
+          green: 0.647
+          blue: 0.31
+          brightness: 1.0
+          effect: "none" # Important to turn off other effects      
+
+  - id: "printer_printing"
+    then:
+      - logger.log: "SCRIPT: printer_printing executing"
+      - light.turn_on:
+          id: printer_leds
+          red: 1.0
+          green: 0.0
+          blue: 0.0
+          brightness: 1.0
+          effect: "Fast Pulse" # Matches name in light.effects
+
+  - id: "printer_finished"
+    then:
+      - logger.log: "SCRIPT: printer_finished executing"
+      - light.turn_on:
+          id: printer_leds
+          red: 0.0
+          green: 1.0
+          blue: 0.0
+          brightness: 1.0
+          effect: "Slow Pulse" # Matches name in light.effects
+
+  - id: "printer_off"
+    then:
+      - logger.log: "SCRIPT: printer_off executing"
+      - light.turn_off:
+          id: printer_leds
+
+
+  - id: "front_standby"
+    then:
+      - logger.log: "SCRIPT: front_standby executing"
+      - light.turn_on:
+          id: front_leds
+          red: 1.0
+          green: 1.0
+          blue: 1.0
+          brightness: 0.15
+          effect: "none" # Important to turn off other effects      
+
+  - id: "front_active"
+    then:
+      - logger.log: "SCRIPT: front_active executing"
+      - light.turn_on:
+          id: front_leds
+          red: 1.0
+          green: 1.0
+          blue: 1.0
+          brightness: 1.0
+          effect: "none" # Important to turn off other effects   
+
+  - id: "front_off"
+    then:
+      - logger.log: "SCRIPT: front_off executing"
+      - light.turn_off:
+          id: front_leds
