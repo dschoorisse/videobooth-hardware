@@ -67,6 +67,30 @@ light:
           min_brightness: 25%
           max_brightness: 100%
 
+# Physical shutdown button with 5-second hold logic
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO21
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    name: "Shutdown Button"
+    id: shutdown_button
+
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 50ms
+
+    on_press:
+      then:
+        - script.execute: button_hold_timer
+
+    on_release:
+      then:
+        - script.stop: button_hold_timer
+
 captive_portal:
 mqtt:
   id: mqtt_client
@@ -187,3 +211,22 @@ script:
       - logger.log: "SCRIPT: front_off executing"
       - light.turn_off:
           id: front_leds
+
+  # Simple 5-second timer script for shutdown button
+  - id: button_hold_timer
+    mode: restart
+    then:
+      - delay: 5s
+      - if:
+          condition:
+            binary_sensor.is_on: shutdown_button
+          then:
+            - logger.log: "Button held for 5 seconds - sending shutdown command"
+            - mqtt.publish:
+                topic: "${name}/shutdown/command"
+                payload: !lambda |-
+                  return "{\"command\":\"shutdown\",\"reason\":\"hardware_button\",\"uptime_ms\":" +
+                         to_string(millis()) +
+                         ",\"request_id\":\"esp32-" + to_string(millis()) + "\"}";
+                qos: 1
+                retain: false
