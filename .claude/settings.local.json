@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(move ESP32-Lights ESP32-PhotoboothHub)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
