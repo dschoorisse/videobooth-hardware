@@ -1,16 +1,89 @@
+# PhotoboothHub to connect different hardware to a MQTT server:
+# - 3 LED strips (Front, Downlight, printer light)
+# - DMX output for external lights
+# - Relay output for controlling camera reset (can only be controlled via sequence)
+# - Command button (planned as shutdown button)
+
 substitutions:
   name: lights
+  mqtt_prefix: "photobooth/PhotoBooth_DESKTOPNJDEOAK/hub"
 
 esphome:
   name: ${name}
-  name_add_mac_suffix: false # Set to false if you want a predictable name without MAC suffix for MQTT topics
+  name_add_mac_suffix: false
 
 esp32:
-  board: m5stack-atom
+  board: esp32-poe
   framework:
     type: esp-idf
-    version: 4.4.8
-    platform_version: 5.4.0
+
+external_components:
+  - source: github://andyboeh/esphome-dmx512@main
+    components: [ dmx512 ]
+
+uart:
+  id: uart_bus
+  baud_rate: 250000
+  tx_pin:
+    number: GPIO1
+    allow_other_uses: true # For ESPHome >= 2023.12.0
+  stop_bits: 2
+
+# TODO: create multiple outputs to allow ESPHome native use for dimming per channel
+dmx512:
+  id: dmx
+  uart_id: uart_bus
+  enable_pin: GPIO5
+  tx_pin: 
+    number: GPIO1
+    allow_other_uses: true # For ESPHome >= 2023.12.0
+  uart_num: 1
+  periodic_update: true # optional
+  force_full_frames: true #optional
+  custom_break_len: 92 #optional
+  custom_mab_len: 13 #optional
+  update_interval: 400 #optional
+
+output:
+  - platform: dmx512
+    channel: 1
+    universe: dmx
+    id: dmx_ch1
+  - platform: dmx512
+    channel: 2
+    universe: dmx
+    id: dmx_ch2
+  - platform: dmx512
+    channel: 3
+    universe: dmx
+    id: dmx_ch3
+  - platform: dmx512
+    channel: 4
+    universe: dmx
+    id: dmx_ch4
+  - platform: dmx512
+    channel: 5
+    universe: dmx
+    id: dmx_ch5
+  - platform: dmx512
+    channel: 6
+    universe: dmx
+    id: dmx_ch6
+
+# Ethernet configuration with static IP
+ethernet:
+  type: LAN8720
+  mdc_pin: GPIO23
+  mdio_pin: GPIO18
+  clk_mode: GPIO17_OUT
+  phy_addr: 0
+  power_pin: GPIO12
+#  manual_ip:
+#    static_ip: 192.168.1.100      # Your desired static IP
+#    gateway: 192.168.1.1          # Your router's IP
+#    subnet: 255.255.255.0         # Your subnet mask
+#    dns1: 192.168.1.1             # Primary DNS (usually your router)
+#    dns2: 8.8.8.8                 # Secondary DNS (optional, e.g., Google DNS)
 
 logger:
 
@@ -18,40 +91,54 @@ ota:
   - platform: esphome
     id: ota_esphome
 
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  use_address: 192.168.2.54 # Static IP, ensure it's outside your DHCP range or reserved
+# Multiple SPI buses for LED strips
+spi:
+  - id: spi_downlight
+    clk_pin: GPIO13   
+    mosi_pin: GPIO14 
+  - id: spi_printer
+    clk_pin: GPIO15  
+    mosi_pin: GPIO16 
+  - id: spi_front
+    clk_pin: GPIO32
+    mosi_pin: GPIO33
 
 light:
-  - platform: esp32_rmt_led_strip
+  # DMX lights with native fade support (no names = no MQTT topics)
+  - platform: monochromatic
+    output: dmx_ch1
+    id: dmx_light_1
+    default_transition_length: 0s
+    
+  - platform: monochromatic
+    output: dmx_ch2
+    id: dmx_light_2
+    default_transition_length: 0s
+    
+  - platform: monochromatic
+    output: dmx_ch3
+    id: dmx_light_3
+    default_transition_length: 0s
+    
+  - platform: monochromatic
+    output: dmx_ch4
+    id: dmx_light_4
+    default_transition_length: 0s
+    
+  - platform: monochromatic
+    output: dmx_ch5
+    id: dmx_light_5
+    default_transition_length: 0s
+    
+  - platform: monochromatic
+    output: dmx_ch6
+    id: dmx_light_6
+    default_transition_length: 0s
+
+  - platform: spi_led_strip
     id: printer_leds
-    pin: GPIO26
-    chipset: SK6812
-    num_leds: 1
-    rgb_order: GRB
-    rmt_channel: 0
-    default_transition_length: 0.2s
-    effects:
-      - pulse:
-          name: "Slow Pulse"
-          transition_length: 1000ms
-          update_interval: 1000ms
-          min_brightness: 50%
-          max_brightness: 100%
-      - pulse:
-          name: "Fast Pulse"
-          transition_length: 300ms
-          update_interval: 300ms
-          min_brightness: 25%
-          max_brightness: 100%
-  - platform: esp32_rmt_led_strip
-    id: front_leds
-    pin: GPIO27
-    chipset: SK6812
-    num_leds: 1
-    rgb_order: GRB
-    rmt_channel: 0
+    spi_id: spi_printer
+    num_leds: 30
     default_transition_length: 0.2s
     effects:
       - pulse:
@@ -67,38 +154,67 @@ light:
           min_brightness: 25%
           max_brightness: 100%
 
-# Physical shutdown button with 5-second hold logic
+  - platform: spi_led_strip
+    id: front_leds
+    spi_id: spi_front
+    num_leds: 60
+    default_transition_length: 0s
+    effects:
+      - pulse:
+          name: "Slow Pulse"
+          transition_length: 1000ms
+          update_interval: 1000ms
+          min_brightness: 50%
+          max_brightness: 100%
+      - pulse:
+          name: "Fast Pulse"
+          transition_length: 300ms
+          update_interval: 300ms
+          min_brightness: 25%
+          max_brightness: 100%
+
+  - platform: spi_led_strip
+    id: downlight_light
+    spi_id: spi_downlight
+    num_leds: 30
+    default_transition_length: 0.2s
+
+
 binary_sensor:
   - platform: gpio
     pin:
-      number: GPIO21
-      mode:
-        input: true
-        pullup: true
-      inverted: true
+      number: GPIO39
+      mode: INPUT
+      inverted: true  # For NC relay
+    id: shutdown_button_raw
+    internal: true  # Hide the raw sensor from MQTT
+    on_press:
+      - script.execute: shutdown_timer
+    on_release:
+      - script.stop: shutdown_timer
+      - binary_sensor.template.publish:
+          id: shutdown_button
+          state: OFF
+      - logger.log: "Shutdown button released"
+  
+  - platform: template
     name: "Shutdown Button"
     id: shutdown_button
 
-    filters:
-      - delayed_on: 50ms
-      - delayed_off: 50ms
-
-    on_press:
-      then:
-        - script.execute: button_hold_timer
-
-    on_release:
-      then:
-        - script.stop: button_hold_timer
-
-captive_portal:
+switch:
+  - platform: gpio
+    pin: GPIO4
+    id: camera_relay
+    inverted: false  # For NC relay
+    # No 'name:' parameter = no automatic MQTT topics
+    
 mqtt:
   id: mqtt_client
   broker: "192.168.1.3"
   port: 1883
   username: !secret mqtt_videobooth_username
   password: !secret mqtt_videobooth_password
-
+  topic_prefix: "${mqtt_prefix}"
   on_connect:
     then:
       - mqtt.publish:
@@ -106,15 +222,15 @@ mqtt:
           payload: "online"
           retain: true
       - script.execute: printer_standby
-      - script.execute: front_standby
+      - script.execute: front_off
+      - script.execute: downlight_off
 
   on_message:
-    - topic: "${name}/printer/command" # e.g., lights/printer/command
+    - topic: "${mqtt_prefix}/printer/command"
       then:
         - lambda: !lambda |-
             ESP_LOGD("rgb_control", "Device '${name}'/printer received command payload: %s", x.c_str());
             std::string payload_str = x;
-
             if (payload_str == "STANDBY") {
               id(printer_standby).execute();
             } else if (payload_str == "PRINTING") {
@@ -123,27 +239,136 @@ mqtt:
               id(printer_finished).execute();
             } else if (payload_str == "OFF") {
               id(printer_off).execute();
-            } else {
-              ESP_LOGW("rgb_control", "Device '${name}' received unknown command: %s", payload_str.c_str());
             }
 
-    - topic: "${name}/front/command" # e.g., lights/printer/command
+    - topic: "${mqtt_prefix}/front/command"
       then:
         - lambda: !lambda |-
-            ESP_LOGD("rgb_control", "Device '${name}'/front received command payload: %s", x.c_str());
-            std::string payload_str = x;
+            ESP_LOGD("mqtt_json", "Received JSON for front: %s", x.c_str());
+            json::parse_json(x, [&](JsonObject root) {
+                if (root.containsKey("color")) {
+                    auto color_obj = root["color"];
+                    float r = color_obj["r"].as<float>() / 255.0;
+                    float g = color_obj["g"].as<float>() / 255.0;
+                    float b = color_obj["b"].as<float>() / 255.0;
+                    float brightness = root["brightness"].as<float>();
+                    int fade_time_ms = root["fade_time_ms"].as<int>();
+                    
+                    // Clamp brightness to 0.0-1.0 range
+                    if (brightness > 1.0) brightness = 1.0;
+                    if (brightness < 0.0) brightness = 0.0;
 
-            if (payload_str == "STANDBY") {
-              id(front_standby).execute();
-            } else if (payload_str == "ACTIVE") {
-              id(front_active).execute();
-            } else {
-              ESP_LOGW("rgb_control", "Device '${name}'/front received unknown command: %s", payload_str.c_str());
+                    auto call = id(front_leds).turn_on();
+                    call.set_red(r);
+                    call.set_green(g);
+                    call.set_blue(b);
+                    call.set_brightness(brightness);
+                    call.set_transition_length(fade_time_ms);
+                    call.perform();
+                    
+                    ESP_LOGD("mqtt_json", "Set front: R=%.2f G=%.2f B=%.2f Brightness=%.2f FadeTime=%dms", r, g, b, brightness, fade_time_ms);
+                }
+                return true;
+            });
+
+    - topic: "${mqtt_prefix}/downlight/command"
+      then:
+        - lambda: !lambda |-
+            ESP_LOGD("mqtt_json", "Received JSON for downlight: %s", x.c_str());
+            json::parse_json(x, [&](JsonObject root) {
+                if (root.containsKey("color")) {
+                    auto color_obj = root["color"];
+                    float r = color_obj["r"].as<float>() / 255.0;
+                    float g = color_obj["g"].as<float>() / 255.0;
+                    float b = color_obj["b"].as<float>() / 255.0;
+                    float brightness = root["brightness"].as<float>();
+                    int fade_time_ms = root["fade_time_ms"].as<int>();
+                    
+                    // Clamp brightness to 0.0-1.0 range
+                    if (brightness > 1.0) brightness = 1.0;
+                    if (brightness < 0.0) brightness = 0.0;
+
+                    auto call = id(downlight_light).turn_on();
+                    call.set_red(r);
+                    call.set_green(g);
+                    call.set_blue(b);
+                    call.set_brightness(brightness);
+                    call.set_transition_length(fade_time_ms);
+                    call.perform();
+                    
+                    ESP_LOGD("mqtt_json", "Set downlight: R=%.2f G=%.2f B=%.2f Brightness=%.2f FadeTime=%dms", r, g, b, brightness, fade_time_ms);
+                }
+                return true;
+            });
+
+    - topic: "${mqtt_prefix}/dmx/command"
+      then:
+        - lambda: !lambda |-
+            ESP_LOGD("dmx_control", "Received DMX command: %s", x.c_str());
+            json::parse_json(x, [&](JsonObject root) {
+                if (root["channels"].is<JsonObject>()) {
+                    JsonObject channels = root["channels"].as<JsonObject>();
+                    int fade_time_ms = 0;
+                    
+                    if (root["fade_time_ms"].is<int>()) {
+                        fade_time_ms = root["fade_time_ms"].as<int>();
+                    }
+                    
+                    for (JsonPair kv : channels) {
+                        int channel = atoi(kv.key().c_str());
+                        int value = kv.value().as<int>();
+                        
+                        if (value > 255) value = 255;
+                        if (value < 0) value = 0;
+                        
+                        esphome::light::LightState* light = nullptr;
+                        if (channel == 1) light = id(dmx_light_1);
+                        else if (channel == 2) light = id(dmx_light_2);
+                        else if (channel == 3) light = id(dmx_light_3);
+                        else if (channel == 4) light = id(dmx_light_4);
+                        else if (channel == 5) light = id(dmx_light_5);
+                        else if (channel == 6) light = id(dmx_light_6);
+                        
+                        if (light != nullptr) {
+                            if (value == 0) {
+                                // Turn off completely for value 0
+                                auto call = light->turn_off();
+                                call.set_transition_length(fade_time_ms);
+                                call.perform();
+                            } else {
+                                // Turn on with brightness for values 1-255
+                                float brightness = value / 255.0;
+                                auto call = light->turn_on();
+                                call.set_brightness(brightness);
+                                call.set_transition_length(fade_time_ms);
+                                call.perform();
+                            }
+                            
+                            ESP_LOGD("dmx_control", "Set DMX channel %d to %d with fade: %dms", channel, value, fade_time_ms);
+                        }
+                    }
+                }
+                return true;
+            });
+
+    - topic: "${mqtt_prefix}/camera/command"
+      then:
+        - lambda: !lambda |-
+            ESP_LOGD("camera_control", "Received camera command: %s", x.c_str());
+            if (x == "RESET") {
+              id(camera_reset).execute();
             }
+            
 
-
-# Define the scripts
 script:
+  - id: shutdown_timer
+    then:
+      - delay: 2s
+      - logger.log: "Shutdown button activated after 2 seconds"
+      - binary_sensor.template.publish:
+          id: shutdown_button
+          state: ON
+          
   - id: "printer_standby"
     then:
       - logger.log: "SCRIPT: printer_standby executing"
@@ -153,7 +378,7 @@ script:
           green: 0.647
           blue: 0.31
           brightness: 1.0
-          effect: "none" # Important to turn off other effects      
+          effect: "none"
 
   - id: "printer_printing"
     then:
@@ -164,7 +389,7 @@ script:
           green: 0.0
           blue: 0.0
           brightness: 1.0
-          effect: "Fast Pulse" # Matches name in light.effects
+          effect: "Fast Pulse"
 
   - id: "printer_finished"
     then:
@@ -175,7 +400,7 @@ script:
           green: 1.0
           blue: 0.0
           brightness: 1.0
-          effect: "Slow Pulse" # Matches name in light.effects
+          effect: "Slow Pulse"
 
   - id: "printer_off"
     then:
@@ -183,50 +408,22 @@ script:
       - light.turn_off:
           id: printer_leds
 
-
-  - id: "front_standby"
-    then:
-      - logger.log: "SCRIPT: front_standby executing"
-      - light.turn_on:
-          id: front_leds
-          red: 1.0
-          green: 1.0
-          blue: 1.0
-          brightness: 0.15
-          effect: "none" # Important to turn off other effects      
-
-  - id: "front_active"
-    then:
-      - logger.log: "SCRIPT: front_active executing"
-      - light.turn_on:
-          id: front_leds
-          red: 1.0
-          green: 1.0
-          blue: 1.0
-          brightness: 1.0
-          effect: "none" # Important to turn off other effects   
-
   - id: "front_off"
     then:
       - logger.log: "SCRIPT: front_off executing"
       - light.turn_off:
           id: front_leds
-
-  # Simple 5-second timer script for shutdown button
-  - id: button_hold_timer
-    mode: restart
+          
+  - id: "downlight_off"
     then:
-      - delay: 5s
-      - if:
-          condition:
-            binary_sensor.is_on: shutdown_button
-          then:
-            - logger.log: "Button held for 5 seconds - sending shutdown command"
-            - mqtt.publish:
-                topic: "${name}/shutdown/command"
-                payload: !lambda |-
-                  return "{\"command\":\"shutdown\",\"reason\":\"hardware_button\",\"uptime_ms\":" +
-                         to_string(millis()) +
-                         ",\"request_id\":\"esp32-" + to_string(millis()) + "\"}";
-                qos: 1
-                retain: false
+      - logger.log: "SCRIPT: downlight_off executing"
+      - light.turn_off:
+          id: downlight_light
+  
+  - id: "camera_reset"
+    then:
+      - logger.log: "SCRIPT: camera_reset executing - activating relay"
+      - switch.turn_on: camera_relay
+      - delay: 3s
+      - switch.turn_off: camera_relay
+      - logger.log: "SCRIPT: camera_reset complete - relay deactivated"
