@@ -228,8 +228,8 @@ mqtt:
           payload: "online"
           retain: true
       - script.execute: printer_standby
-      - script.execute: front_off
-      - script.execute: downlight_off
+      #- script.execute: front_off
+      #- script.execute: downlight_off
 
   on_message:
     - topic: "${mqtt_prefix}/printer/command"
