@@ -1,0 +1,4 @@
+(version 1)
+(rule "DMX isolation to other connected nets"
+  (condition "A.NetName != '' && B.NetName != '' && A.hasNetclass('DMX_Isolated') && !B.hasNetclass('DMX_Isolated')")
+  (constraint clearance (min 3mm)))

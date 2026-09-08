@@ -5,8 +5,10 @@ Updated 2026-09-08 against imported baseline commit `b2cbc42`.
 The fixes are implemented. KiCad 10 ERC reports **zero errors and zero warnings**
 with the existing rule configuration. All 56 physical component instances,
 including DNP R9, have loadable footprints with matching electrical pad numbers.
-There is **no PCB layout yet**; these checks do not establish routing, thermal
-performance, mechanical fit or fabrication readiness.
+There is now a **100 × 130 mm unrouted PCB placement**, with Ethernet on the
+right. Native PCB DRC reports zero placement violations and zero schematic-parity
+issues, with 147 unconnected items remaining. These checks do not establish
+routing, thermal performance, mechanical fit or fabrication readiness.
 
 Design inputs: external 5 V supply, 40 W maximum total load (8 A at 5 V),
 bare stranded 1.5 mm² wire without ferrules, and the 98 mm Olimex ESP32-POE-ISO.
@@ -221,14 +223,18 @@ reset relay retains its low-side transistor drive and flyback diode.
 - Select actual main and branch fuse ratings from branch currents, startup
   behavior, fuse curves, wiring and planned copper. Only total power is known.
 - Confirm the PSU maintains 4.75–5.25 V at the board under load.
-- Create PCB placement/routing, including copper suitable for the 8 A main path,
-  DMX isolation spacing, local decoupling and connector access.
+- Complete PCB routing, including copper suitable for the 8 A main path,
+  DMX isolation spacing and local decoupling. The initial placement, mounting
+  holes and copper keepouts are recorded in [PCB layout constraints](docs/pcb-layout.md)
+  and the [placement preview](docs/pcb-placement.png).
 - Check Olimex sockets/standoffs, fuse slots/retention openings, enclosure height
   and tool access with physical samples and fabrication previews.
 - Test startup, power-source transitions, lighting transients, DMX signaling and
   temperature rise on the prototype. Follow the JP1 USB instruction above.
 - Confirm stock, assembly fees and manual-part handling in the fabrication quote.
 
-The imported baseline is `b2cbc42`. This schematic checkpoint records the
-verified fixes and the decision to retain the ideal diode. No fabrication
-output has been released.
+The imported baseline is `b2cbc42`; verified schematic fixes and the decision
+to retain the ideal diode were committed as `f0294b7`. The subsequent PCB
+placement preserves all schematic connectivity and sourcing fields, including
+R9's DNP state and the selected JP1 header/shunt. No fabrication output has
+been released.

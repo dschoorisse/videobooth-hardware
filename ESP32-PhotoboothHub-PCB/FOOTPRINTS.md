@@ -29,7 +29,9 @@ automatic holes in the carrier PCB. Choose carrier hole sizes, standoffs and
 clearance for the actual fastening arrangement during PCB layout. They are not
 electrical pads.
 
-**F.Fab** and **F.SilkS** show the module PCB perimeter, including its USB notch.
+**F.Fab** and **Dwgs.User** show the module PCB perimeter, including its USB notch.
+The perimeter is an assembly guide: its overhang must not print beyond the
+carrier board edge on the silkscreen.
 **Dwgs.User** shows antenna/module and RJ45 overhang, plus mounting guides.
 The courtyard conservatively includes the assembly overhangs from the official
 Rev N1 PCB, not just the bare PCB. The upper overhang allows for the larger module

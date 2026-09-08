@@ -24,12 +24,14 @@ Use ANT as the default family for this low-voltage design, with the exact suffix
 | Terminal dimensions | 1.6 × 0.3 mm; 4.6 mm projection below body |
 | Retention peg | 2.7 × 1.4 mm cross-section; 2.0 mm projection below body |
 | Retention opening | 3.2 × 1.8 mm at (0, -2.7), **nonplated routed opening on Edge.Cuts** |
-| Opening corner treatment | R0.4 mm, a project fabrication choice; the manufacturer's drawing shows square corners |
+| Opening corner treatment | R0.5 mm for a standard 1.0 mm routing tool, a project fabrication choice; the manufacturer's drawing shows square corners |
 | Courtyard | 12.6 × 5.8 mm, 0.5 mm beyond nominal body on each side |
 
 The body placement uses the side-view 1.2 mm terminal-to-body-edge offset. The retention opening uses the mounting drawing's 2.7 mm center-to-center offset from the terminal row. Its rounded corners clear the nominal 2.7 × 1.4 mm rectangular peg. A simple 3.2 × 1.8 mm oval drill would remove too little material at the peg corners, so it is deliberately **not** used. No copper pad is assigned to the retention opening. Ensure PCB routing exports include the footprint's closed Edge.Cuts loop.
 
-The hole sizes and placement come from the manufacturer's drawing; land sizes, courtyard, reference orientation, and routable corner treatment are project choices. Obtain a holder sample and confirm retention fit and fabrication tolerances before ordering production boards. Confirm the board house can make the 0.6 mm plated slots and the retention cutout with a 0.8 mm or smaller routing tool. Do not allow substitution with an oval NPTH hole of the same outer dimensions.
+The R0.5 mm corners accommodate a standard 1.0 mm routing tool. For the opening centered at the origin, its upper-right corner center is (1.1, 0.4) mm and the nominal peg corner is (1.35, 0.7) mm. Their distance is 0.390512 mm, leaving **0.109488 mm nominal corner clearance** inside the 0.5 mm arc. The straight sides leave 0.25 mm and 0.20 mm clearance per side. The footprint retains the specified 3.2 × 1.8 mm opening dimensions and terminal-to-opening offset.
+
+The hole sizes and placement come from the manufacturer's drawing; land sizes, courtyard, reference orientation, and routable corner treatment are project choices. [JLCPCB's published capabilities](https://jlcpcb.com/capabilities/pcb-capabilities) include 0.5 mm minimum plated slots and 1.0 mm minimum nonplated routed slots, so the 0.6 mm terminal slots and 1.0 mm routing tool use standard listed capabilities. This does not qualify the assembled fit: the holder drawing gives no peg tolerance, and routing tolerances can consume the nominal corner margin. Obtain a holder sample, confirm fabrication tolerances, and check a routed coupon before ordering production boards. Do not allow substitution with an oval NPTH hole of the same outer dimensions.
 
 ## Area, height, and assembly
 
