@@ -1,4 +1,6 @@
 (sym_lib_table
 	(version 7)
 	(lib (name "ProPrj_New-easyedapro") (type "KiCad") (uri "${KIPRJMOD}/ProPrj_New-easyedapro.kicad_sym") (options "") (descr ""))
+	(lib (name "DMXFixes") (type "KiCad") (uri "${KIPRJMOD}/DMXFixes.kicad_sym") (options "") (descr "Isolated DMX driver components"))
+	(lib (name "PowerFixes") (type "KiCad") (uri "${KIPRJMOD}/PowerFixes.kicad_sym") (options "") (descr "Controller supply isolation components"))
 )

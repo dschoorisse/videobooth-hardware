@@ -1,0 +1,51 @@
+# Project footprint sources
+
+## Olimex_ESP32-POE-ISO
+
+Carrier footprint for the user's confirmed **ESP32-POE-ISO (98 mm board)**.
+Header coordinates and mounting positions were checked against the official
+[Rev N1 PCB](https://github.com/OLIMEX/ESP32-POE-ISO/blob/master/HARDWARE/ESP32-PoE-ISO-Rev.N1/ESP32-PoE-ISO_Rev_N1.kicad_pcb)
+and the official
+[revision J and newer mechanical drawing](https://github.com/OLIMEX/ESP32-POE-ISO/blob/master/HARDWARE/Dimensions/Revision%20J%20and%20newer/ESP32-POE-ISO-revision-J-dimensions.pdf).
+The [Olimex product page](https://www.olimex.com/Products/IoT/ESP32/ESP32-POE-ISO/open-source-hardware)
+independently specifies 1 inch row spacing.
+
+Coordinates are millimetres, viewed from above the module with the antenna at
+the top. The footprint origin is EXT1 pin 1, which is U2 pin 1 (+5V).
+The old EasyEDA footprint had 20.420 mm between rows. This footprint uses the
+verified **25.400 mm** spacing and retains the schematic's pad numbering.
+
+| Item | Geometry |
+| --- | --- |
+| U2 pads 1 through 10 | x = 0; y = 0 through 22.86 in 2.54 mm steps |
+| U2 pads 20 through 11 | x = 25.4; y = 0 through 22.86 in 2.54 mm steps |
+| Header plated holes | 1.0 mm drill; 1.8 mm copper diameter; pad 1 rectangular |
+| PCB outline bounds | x = -1.29 through 26.71; y = -33.22 through 64.93 |
+| PCB dimensions | 28.00 x 98.15 mm |
+| Module mounting holes, diameter 2.2 mm | (1.27, -5.745), (24.13, -5.745), (6.35, 62.200) |
+
+The module's own mounting holes are drawing guides on **Dwgs.User**, not
+automatic holes in the carrier PCB. Choose carrier hole sizes, standoffs and
+clearance for the actual fastening arrangement during PCB layout. They are not
+electrical pads.
+
+**F.Fab** and **F.SilkS** show the module PCB perimeter, including its USB notch.
+**Dwgs.User** shows antenna/module and RJ45 overhang, plus mounting guides.
+The courtyard conservatively includes the assembly overhangs from the official
+Rev N1 PCB, not just the bare PCB. The upper overhang allows for the larger module
+outline in that reference CAD: U6 uses the selectable WROOM/WROVER module footprint
+named `ESP32-WROVER_MODULE`, whose drawing bounds extend 6.386 mm above the PCB
+(including the drawing stroke). The RJ45 body on F.Fab extends 8.143 mm below the
+PCB. Both projections are also visible in the official J+ mechanical drawing.
+The courtyard adds at least 0.5 mm around these bounds; its 113.85 mm length is
+the conservative assembly envelope, not the 98.15 mm bare board length. Confirm
+the fitted ESP32 module variant, physical socket height, access to the USB
+connector, RJ45 plug/cable access and antenna clearance during placement.
+No carrier copper keepout or connector insertion envelope is implied by these
+drawing guides.
+
+The non-isolated ESP32-POE has the same header pad geometry and connector pin
+mapping in the official Rev M2 CAD, but an 80 mm body and a different lower
+mounting hole. It must not use this ISO mechanical outline without review.
+
+No external 3D model is referenced.

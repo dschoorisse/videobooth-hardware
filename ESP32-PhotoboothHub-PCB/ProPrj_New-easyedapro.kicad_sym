@@ -29,7 +29,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -129,7 +129,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -147,7 +147,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -195,7 +195,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -295,7 +295,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -313,7 +313,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -361,7 +361,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -461,7 +461,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -479,7 +479,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -527,7 +527,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -627,7 +627,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -645,7 +645,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -693,7 +693,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -793,7 +793,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -811,7 +811,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -859,7 +859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -959,7 +959,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -977,7 +977,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -1025,7 +1025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1125,7 +1125,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -1143,7 +1143,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -1190,7 +1190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:DO-35_BD2.0-L4.2-P8.20-D0.5-RD"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1303,7 +1303,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 3.81)
 				(name "C"
@@ -1321,7 +1321,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 3.81)
 				(name "A"
@@ -1505,7 +1505,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "K"
@@ -1523,7 +1523,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "A"
@@ -1708,7 +1708,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "A"
@@ -1726,7 +1726,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "K"
@@ -1886,7 +1886,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 3.81)
 				(name "K"
@@ -1904,7 +1904,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 3.81)
 				(name "A"
@@ -2099,7 +2099,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 4.318)
 				(name "1"
@@ -2117,7 +2117,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 4.826)
 				(name "2"
@@ -2326,7 +2326,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -2344,7 +2344,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -2791,7 +2791,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at -13.97 7.62 0)
 				(length 2.54)
 				(name "1"
@@ -2809,7 +2809,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -13.97 2.54 0)
 				(length 2.54)
 				(name "2"
@@ -2827,7 +2827,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -13.97 -2.54 0)
 				(length 2.54)
 				(name "3"
@@ -2845,7 +2845,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin no_connect line
 				(at -13.97 -7.62 0)
 				(length 2.54)
 				(name "4"
@@ -2863,7 +2863,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 13.97 -7.62 180)
 				(length 2.54)
 				(name "5"
@@ -2881,7 +2881,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin open_collector line
 				(at 13.97 -2.54 180)
 				(length 2.54)
 				(name "6"
@@ -2917,7 +2917,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 13.97 7.62 180)
 				(length 2.54)
 				(name "8"
@@ -2964,7 +2964,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:SMT-8_L9.7-W6.6-P2.54-LS10.3-BL"
+		(property "Footprint" "Package_DIP:SMDIP-8_W9.53mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3367,7 +3367,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin no_connect line
 				(at -15.24 7.62 0)
 				(length 5.08)
 				(name "NC"
@@ -3385,7 +3385,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -15.24 2.54 0)
 				(length 5.08)
 				(name "A"
@@ -3403,7 +3403,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -15.24 -2.54 0)
 				(length 5.08)
 				(name "C"
@@ -3421,7 +3421,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin no_connect line
 				(at -15.24 -7.62 0)
 				(length 5.08)
 				(name "NC"
@@ -3439,7 +3439,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 15.24 -7.62 180)
 				(length 5.08)
 				(name "GND"
@@ -3457,7 +3457,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin open_collector line
 				(at 15.24 -2.54 180)
 				(length 5.08)
 				(name "VO"
@@ -3475,7 +3475,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 15.24 2.54 180)
 				(length 5.08)
 				(name "VE"
@@ -3493,7 +3493,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 15.24 7.62 180)
 				(length 5.08)
 				(name "VCC"
@@ -3735,7 +3735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3835,7 +3835,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -3853,7 +3853,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -4370,7 +4370,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -10.16 5.08 0)
 				(length 5.08)
 				(name "COIL"
@@ -4388,7 +4388,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 5.08 180)
 				(length 5.08)
 				(name "2"
@@ -4406,7 +4406,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 -5.08 180)
 				(length 5.08)
 				(name "4"
@@ -4424,7 +4424,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -10.16 -5.08 0)
 				(length 5.08)
 				(name "COIL"
@@ -4471,7 +4471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:RELAY-TH_BRD-SS-1XXL"
+		(property "Footprint" "Photobooth:Relay_SPDT_QLRELAY_BRD-SS-105L"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4711,7 +4711,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 7.62 5.08 180)
 				(length 5.08)
 				(name "1"
@@ -4729,7 +4729,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 7.62 -5.08 180)
 				(length 5.08)
 				(name "2"
@@ -4747,7 +4747,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -10.16 7.62 0)
 				(length 5.08)
 				(name "3"
@@ -4765,7 +4765,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -10.16 -7.62 0)
 				(length 5.08)
 				(name "4"
@@ -4783,7 +4783,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 0 180)
 				(length 5.08)
 				(name "5"
@@ -4831,7 +4831,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4968,7 +4968,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -4986,7 +4986,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -5171,7 +5171,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 0 -5.08 90)
 				(length 2.54)
 				(name "1"
@@ -5189,7 +5189,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 0 5.08 270)
 				(length 2.54)
 				(name "2"
@@ -5237,7 +5237,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5374,7 +5374,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -5392,7 +5392,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -5440,7 +5440,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5577,7 +5577,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -3.81 0 0)
 				(length 2.54)
 				(name "1"
@@ -5595,7 +5595,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 3.81 0 180)
 				(length 2.54)
 				(name "2"
@@ -5643,7 +5643,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5780,7 +5780,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -5798,7 +5798,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -5846,7 +5846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5983,7 +5983,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -6001,7 +6001,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -6049,7 +6049,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6186,7 +6186,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -3.81 0 0)
 				(length 2.54)
 				(name "1"
@@ -6204,7 +6204,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 3.81 0 180)
 				(length 2.54)
 				(name "2"
@@ -6252,7 +6252,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6389,7 +6389,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -6407,7 +6407,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -6455,7 +6455,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:C0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6592,7 +6592,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -6610,7 +6610,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -7656,7 +7656,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 1.27 0)
 				(length 2.54)
 				(name "1"
@@ -7674,7 +7674,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -1.27 0)
 				(length 2.54)
 				(name "2"
@@ -7832,7 +7832,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 2.54 0)
 				(length 2.54)
 				(name "1"
@@ -7850,7 +7850,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "2"
@@ -7868,7 +7868,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -2.54 0)
 				(length 2.54)
 				(name "3"
@@ -8015,7 +8015,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 3.81 0)
 				(length 2.54)
 				(name "1"
@@ -8033,7 +8033,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 1.27 0)
 				(length 2.54)
 				(name "2"
@@ -8051,7 +8051,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -1.27 0)
 				(length 2.54)
 				(name "3"
@@ -8069,7 +8069,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -3.81 0)
 				(length 2.54)
 				(name "4"
@@ -8227,7 +8227,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 1.27 0)
 				(length 2.54)
 				(name "1"
@@ -8245,7 +8245,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -1.27 0)
 				(length 2.54)
 				(name "2"
@@ -8267,10 +8267,10 @@
 		(embedded_fonts no)
 	)
 	(symbol "Drawing-Symbol_A4"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" ""
 			(at 0 0 0)
@@ -8292,7 +8292,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:"
+		(property "Footprint" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10139,7 +10139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:COMM-TH_20P-P2.54_ESP32-POE-ISO"
+		(property "Footprint" "Photobooth:Olimex_ESP32-POE-ISO"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10250,7 +10250,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -13.97 11.43 0)
 				(length 2.54)
 				(name "+5V"
@@ -10268,7 +10268,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_out line
 				(at -13.97 8.89 0)
 				(length 2.54)
 				(name "+3.3V"
@@ -10286,7 +10286,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -13.97 6.35 0)
 				(length 2.54)
 				(name "GND"
@@ -10304,7 +10304,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -13.97 3.81 0)
 				(length 2.54)
 				(name "ESP_EN"
@@ -10322,7 +10322,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -13.97 1.27 0)
 				(length 2.54)
 				(name "GPIO0"
@@ -10340,7 +10340,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -13.97 -1.27 0)
 				(length 2.54)
 				(name "GPIO1"
@@ -10358,7 +10358,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -13.97 -3.81 0)
 				(length 2.54)
 				(name "GPIO2"
@@ -10376,7 +10376,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -13.97 -6.35 0)
 				(length 2.54)
 				(name "GPIO3"
@@ -10394,10 +10394,10 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -13.97 -8.89 0)
 				(length 2.54)
-				(name "GPI04"
+				(name "GPIO4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10412,7 +10412,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -13.97 -11.43 0)
 				(length 2.54)
 				(name "GPIO5"
@@ -10430,7 +10430,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -11.43 180)
 				(length 2.54)
 				(name "GPIO13"
@@ -10448,7 +10448,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -8.89 180)
 				(length 2.54)
 				(name "GPIO14"
@@ -10466,7 +10466,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -6.35 180)
 				(length 2.54)
 				(name "GPIO15"
@@ -10484,7 +10484,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -3.81 180)
 				(length 2.54)
 				(name "GPIO16"
@@ -10502,7 +10502,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 -1.27 180)
 				(length 2.54)
 				(name "GPIO32"
@@ -10520,7 +10520,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 13.97 1.27 180)
 				(length 2.54)
 				(name "GPIO33"
@@ -10538,7 +10538,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 13.97 3.81 180)
 				(length 2.54)
 				(name "GPI34"
@@ -10556,7 +10556,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 13.97 6.35 180)
 				(length 2.54)
 				(name "GPI35"
@@ -10574,7 +10574,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 13.97 8.89 180)
 				(length 2.54)
 				(name "GPI36"
@@ -10592,7 +10592,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 13.97 11.43 180)
 				(length 2.54)
 				(name "GPI39"
@@ -10639,7 +10639,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:LED0805-R-RD"
+		(property "Footprint" "Photobooth:LED_0805_2012Metric_A1K2"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10800,7 +10800,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 3.81)
 				(name "+"
@@ -10818,7 +10818,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 3.81)
 				(name "-"
@@ -10866,7 +10866,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10966,7 +10966,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -10984,7 +10984,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -11032,7 +11032,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11132,7 +11132,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -11150,7 +11150,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -11198,7 +11198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11298,7 +11298,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -11316,7 +11316,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -11364,7 +11364,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11464,7 +11464,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -11482,7 +11482,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -11530,7 +11530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11630,7 +11630,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -11648,7 +11648,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -11924,7 +11924,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -6.35 0 0)
 				(length 2.54)
 				(name "1"
@@ -11942,7 +11942,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -1.27 -7.62 90)
 				(length 2.54)
 				(name "2"
@@ -11960,7 +11960,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 6.35 -7.62 90)
 				(length 2.54)
 				(name "3"
@@ -11978,7 +11978,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 6.35 7.62 270)
 				(length 2.54)
 				(name "4"
@@ -11996,7 +11996,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -1.27 7.62 270)
 				(length 2.54)
 				(name "5"
@@ -12371,7 +12371,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 8.89 0 180)
 				(length 2.54)
 				(name "MAIN"
@@ -12389,7 +12389,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -8.89 -5.08 0)
 				(length 2.54)
 				(name "COIL2"
@@ -12407,7 +12407,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 8.89 -5.08 180)
 				(length 2.54)
 				(name "NO"
@@ -12425,7 +12425,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 8.89 5.08 180)
 				(length 2.54)
 				(name "NC"
@@ -12443,7 +12443,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -8.89 5.08 0)
 				(length 2.54)
 				(name "COIL1"
@@ -12472,10 +12472,10 @@
 		(pin_names
 			(hide yes)
 		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "#PWR"
 			(at 0 0 0)
@@ -12498,7 +12498,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:"
+		(property "Footprint" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12994,7 +12994,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "SPT 1,5/2-V-3,5"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13004,18 +13004,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:CONN-TH_KF250NH-3.5-2P"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/KF250NH-3.5-2P/1067754.html"
+		(property "Footprint" "Photobooth:PhoenixContact_SPT_1.5_2-V-3.5_1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13026,7 +13015,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.phoenixcontact.com/en-gb/products/pcb-terminal-block-spt-15-2-v-35-1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13037,7 +13026,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "KF250NH-3.5-2P"
+		(property "Description" "2-pole PCB spring terminal; 3.5 mm pitch; bare flexible wire 0.2-1.5 mm2; 17.5 A IEC / 10 A UL; open clamp with screwdriver for stranded wire"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13048,7 +13037,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KEFA(科发)"
+		(property "Manufacturer Part" "1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13059,7 +13048,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C976556"
+		(property "Manufacturer" "Phoenix Contact"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13070,7 +13059,7 @@
 				)
 			)
 		)
-		(property "Supplier" "LCSC"
+		(property "Supplier Part" "1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13081,7 +13070,18 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "1x2P 3.5mm 每排P数:2 排数:1"
+		(property "Supplier" "Phoenix Contact"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13115,7 +13115,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 1.27 0)
 				(length 2.54)
 				(name "1"
@@ -13133,7 +13133,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -1.27 0)
 				(length 2.54)
 				(name "2"
@@ -13170,7 +13170,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "SPT 1,5/3-V-3,5"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13180,18 +13180,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:CONN-TH_KF250NH-3.5-3P"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/KF250NH-3.5-3P/1067755.html"
+		(property "Footprint" "Photobooth:PhoenixContact_SPT_1.5_3-V-3.5_1990863"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13202,7 +13191,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.phoenixcontact.com/en-gb/products/pcb-terminal-block-spt-15-3-v-35-1990863"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13213,7 +13202,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "KF250NH-3.5-3P"
+		(property "Description" "3-pole PCB spring terminal; 3.5 mm pitch; bare flexible wire 0.2-1.5 mm2; 17.5 A IEC / 10 A UL; open clamp with screwdriver for stranded wire"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13224,7 +13213,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KEFA(科发)"
+		(property "Manufacturer Part" "1990863"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13235,7 +13224,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C976557"
+		(property "Manufacturer" "Phoenix Contact"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13246,7 +13235,7 @@
 				)
 			)
 		)
-		(property "Supplier" "LCSC"
+		(property "Supplier Part" "1990863"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13257,7 +13246,18 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "1x3P 3.5mm 每排P数:3 排数:1"
+		(property "Supplier" "Phoenix Contact"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13291,7 +13291,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 2.54 0)
 				(length 2.54)
 				(name "1"
@@ -13309,7 +13309,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "2"
@@ -13327,7 +13327,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -2.54 0)
 				(length 2.54)
 				(name "3"
@@ -13364,7 +13364,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "SPT 1,5/4-V-3,5"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13374,18 +13374,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:CONN-TH_KF250NH-3.5-4P"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/KF250NH-3.5-4P/1067756.html"
+		(property "Footprint" "Photobooth:PhoenixContact_SPT_1.5_4-V-3.5_1990876"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13396,7 +13385,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.phoenixcontact.com/en-gb/products/pcb-terminal-block-spt-15-4-v-35-1990876"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13407,7 +13396,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "KF250NH-3.5-4P"
+		(property "Description" "4-pole PCB spring terminal; 3.5 mm pitch; bare flexible wire 0.2-1.5 mm2; 17.5 A IEC / 10 A UL; open clamp with screwdriver for stranded wire"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13418,7 +13407,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KEFA(科发)"
+		(property "Manufacturer Part" "1990876"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13429,7 +13418,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C976558"
+		(property "Manufacturer" "Phoenix Contact"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13440,7 +13429,7 @@
 				)
 			)
 		)
-		(property "Supplier" "LCSC"
+		(property "Supplier Part" "1990876"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13451,7 +13440,18 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "1x4P 3.5mm 每排P数:4 排数:1"
+		(property "Supplier" "Phoenix Contact"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13485,7 +13485,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 3.81 0)
 				(length 2.54)
 				(name "1"
@@ -13503,7 +13503,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 1.27 0)
 				(length 2.54)
 				(name "2"
@@ -13521,7 +13521,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -1.27 0)
 				(length 2.54)
 				(name "3"
@@ -13539,7 +13539,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -3.81 0)
 				(length 2.54)
 				(name "4"
@@ -13734,7 +13734,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 0.762)
 				(name "1"
@@ -13752,7 +13752,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 0.762)
 				(name "2"
@@ -13899,7 +13899,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin tri_state line
 				(at -8.89 3.81 0)
 				(length 2.54)
 				(name "RO"
@@ -13917,7 +13917,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -8.89 1.27 0)
 				(length 2.54)
 				(name "RE#"
@@ -13935,7 +13935,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -8.89 -1.27 0)
 				(length 2.54)
 				(name "DE"
@@ -13953,7 +13953,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -8.89 -3.81 0)
 				(length 2.54)
 				(name "DI"
@@ -13971,7 +13971,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 8.89 -3.81 180)
 				(length 2.54)
 				(name "GND"
@@ -13989,7 +13989,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 8.89 -1.27 180)
 				(length 2.54)
 				(name "A"
@@ -14007,7 +14007,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 8.89 1.27 180)
 				(length 2.54)
 				(name "B"
@@ -14025,7 +14025,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 8.89 3.81 180)
 				(length 2.54)
 				(name "VCC"
@@ -14172,7 +14172,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin tri_state line
 				(at -8.89 3.81 0)
 				(length 2.54)
 				(name "RO"
@@ -14190,7 +14190,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -8.89 1.27 0)
 				(length 2.54)
 				(name "RE#"
@@ -14208,7 +14208,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -8.89 -1.27 0)
 				(length 2.54)
 				(name "DE"
@@ -14226,7 +14226,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -8.89 -3.81 0)
 				(length 2.54)
 				(name "DI"
@@ -14244,7 +14244,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 8.89 -3.81 180)
 				(length 2.54)
 				(name "GND"
@@ -14262,7 +14262,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 8.89 -1.27 180)
 				(length 2.54)
 				(name "A"
@@ -14280,7 +14280,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at 8.89 1.27 180)
 				(length 2.54)
 				(name "B"
@@ -14298,7 +14298,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 8.89 3.81 180)
 				(length 2.54)
 				(name "VCC"
@@ -14345,7 +14345,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:SOT-23-3_L2.9-W1.4-P1.91-LS2.6-BR"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14482,7 +14482,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "B"
@@ -14500,7 +14500,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 0 -5.08 90)
 				(length 2.54)
 				(name "E"
@@ -14518,7 +14518,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 0 5.08 270)
 				(length 2.54)
 				(name "C"
@@ -14702,7 +14702,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -2.54 0 0)
 				(length 2.54)
 				(name "B"
@@ -14720,7 +14720,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 2.54 -5.08 90)
 				(length 2.54)
 				(name "E"
@@ -14738,7 +14738,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 2.54 5.08 270)
 				(length 2.54)
 				(name "C"
@@ -14767,10 +14767,10 @@
 		(pin_names
 			(hide yes)
 		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "#PWR"
 			(at 0 0 0)
@@ -14793,7 +14793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:"
+		(property "Footprint" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14868,10 +14868,10 @@
 		(pin_names
 			(hide yes)
 		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "#PWR"
 			(at 0 0 0)
@@ -14894,7 +14894,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:"
+		(property "Footprint" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14977,7 +14977,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "CNT-06 / MICRO2"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14987,18 +14987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:FUSE-TH_L24.4-W9.4-P22.60"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20241204/2C5BCE3FA349D3ADCF55CB0838B92C4A.pdf"
+		(property "Footprint" "Photobooth:Fuseholder_OptiFuse_CNT-06_MICRO2"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15009,7 +14998,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.optifuse.com/optifuse_ecommerce_tools/datasheets/CNT-06.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15020,7 +15009,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "PTF-77"
+		(property "Description" "15A PCB MICRO2-style fuse holder; use manufacturer-compatible ANT/APT fuse; fuse rating to be selected separately"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15031,7 +15020,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "XFCN(兴飞)"
+		(property "Manufacturer Part" "CNT-06"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15042,7 +15031,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C717030"
+		(property "Manufacturer" "OptiFuse"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15053,7 +15042,7 @@
 				)
 			)
 		)
-		(property "Supplier" "LCSC"
+		(property "Supplier Part" "CNT-06"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15064,7 +15053,18 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "保险丝座 5x20mm 绿色 2件套"
+		(property "Supplier" "OptiFuse"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15099,7 +15099,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -15117,7 +15117,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -15137,7 +15137,10 @@
 			)
 		)
 		(embedded_fonts no)
-	)
+
+		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
 	(symbol "PZ254V-11-03P_C2937625"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15264,7 +15267,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 2.54 0)
 				(length 2.54)
 				(name "1"
@@ -15282,7 +15285,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "2"
@@ -15300,7 +15303,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -2.54 0)
 				(length 2.54)
 				(name "3"
@@ -15329,10 +15332,10 @@
 		(pin_names
 			(hide yes)
 		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "#PWR"
 			(at 0 0 0)
@@ -15355,7 +15358,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:"
+		(property "Footprint" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15442,10 +15445,10 @@
 		(pin_names
 			(hide yes)
 		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "#PWR"
 			(at 0 0 0)
@@ -15468,7 +15471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:"
+		(property "Footprint" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15674,7 +15677,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -15692,7 +15695,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -15740,7 +15743,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15840,7 +15843,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -15858,7 +15861,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -16006,7 +16009,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -8.89 3.81 0)
 				(length 2.54)
 				(name "-VIN"
@@ -16024,7 +16027,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -8.89 1.27 0)
 				(length 2.54)
 				(name "+VIN"
@@ -16042,7 +16045,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_out line
 				(at -8.89 -1.27 0)
 				(length 2.54)
 				(name "-VOUT"
@@ -16060,7 +16063,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_out line
 				(at -8.89 -3.81 0)
 				(length 2.54)
 				(name "+VOUT"
@@ -16108,7 +16111,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16208,7 +16211,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -16226,7 +16229,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -16274,7 +16277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16374,7 +16377,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -16392,7 +16395,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -16440,7 +16443,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:R0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16540,7 +16543,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -16558,7 +16561,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -16595,7 +16598,7 @@
 				)
 			)
 		)
-		(property "Value" "470uF"
+		(property "Value" "470uF / 16V"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16606,7 +16609,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:CAP-SMD_BD6.3-L6.6-W6.6-LS7.6-RD"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16617,7 +16620,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/RVT1C471M0607/3388608.html"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_Honor-Elec-RVT1C471M0810_C3341.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16628,7 +16631,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "470uF +/-20%, 16V, 105C aluminum electrolytic SMD; 8mm diameter, 10.7mm maximum height; 240mA ripple at 120Hz/105C"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16639,7 +16642,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "RVT1C471M0607"
+		(property "Manufacturer Part" "RVT1C471M0810"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16650,7 +16653,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "ROQANG(容强)"
+		(property "Manufacturer" "Honor Elec"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16661,7 +16664,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C2977552"
+		(property "Supplier Part" "C3341"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16683,7 +16686,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "470uF ±20% 16V"
+		(property "LCSC Part Name" "470uF 16V aluminum electrolytic SMD 8x10.2mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16767,7 +16770,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -16785,7 +16788,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -16805,7 +16808,11 @@
 			)
 		)
 		(embedded_fonts no)
-	)
+
+		(property "Voltage Rating" "16 V" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Tolerance" "20%" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
 	(symbol "SN74AHCT125DR"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16832,7 +16839,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16990,7 +16997,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "1Y"
@@ -17044,7 +17051,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "2Y"
@@ -17062,7 +17069,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "GND"
@@ -17080,7 +17087,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "3Y"
@@ -17134,7 +17141,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "4Y"
@@ -17188,7 +17195,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "VCC"
@@ -17235,7 +17242,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17346,7 +17353,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -11.43 7.62 0)
 				(length 2.54)
 				(name "1OE#"
@@ -17364,7 +17371,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -11.43 5.08 0)
 				(length 2.54)
 				(name "1A"
@@ -17382,7 +17389,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin tri_state line
 				(at -11.43 2.54 0)
 				(length 2.54)
 				(name "1Y"
@@ -17400,7 +17407,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -11.43 0 0)
 				(length 2.54)
 				(name "2OE#"
@@ -17418,7 +17425,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -11.43 -2.54 0)
 				(length 2.54)
 				(name "2A"
@@ -17436,7 +17443,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin tri_state line
 				(at -11.43 -5.08 0)
 				(length 2.54)
 				(name "2Y"
@@ -17454,7 +17461,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -11.43 -7.62 0)
 				(length 2.54)
 				(name "GND"
@@ -17472,7 +17479,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin tri_state line
 				(at 11.43 -7.62 180)
 				(length 2.54)
 				(name "3Y"
@@ -17490,7 +17497,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 11.43 -5.08 180)
 				(length 2.54)
 				(name "3A"
@@ -17508,7 +17515,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 11.43 -2.54 180)
 				(length 2.54)
 				(name "3OE#"
@@ -17526,7 +17533,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin tri_state line
 				(at 11.43 0 180)
 				(length 2.54)
 				(name "4Y"
@@ -17544,7 +17551,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 11.43 2.54 180)
 				(length 2.54)
 				(name "4A"
@@ -17562,7 +17569,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 11.43 5.08 180)
 				(length 2.54)
 				(name "4OE#"
@@ -17580,7 +17587,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 11.43 7.62 180)
 				(length 2.54)
 				(name "VCC"
@@ -17798,7 +17805,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -3.81 -7.62 90)
 				(length 2.54)
 				(name "1"
@@ -17816,7 +17823,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 6.35 7.62 270)
 				(length 2.54)
 				(name "3"
@@ -17834,7 +17841,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -3.81 7.62 270)
 				(length 2.54)
 				(name "4"
@@ -17852,7 +17859,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -8.89 0 0)
 				(length 2.54)
 				(name "5"
@@ -18082,7 +18089,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -3.81 -7.62 90)
 				(length 2.54)
 				(name "1"
@@ -18100,7 +18107,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 6.35 7.62 270)
 				(length 2.54)
 				(name "3"
@@ -18118,7 +18125,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -3.81 7.62 270)
 				(length 2.54)
 				(name "4"
@@ -18136,7 +18143,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -8.89 0 0)
 				(length 2.54)
 				(name "5"
@@ -19128,7 +19135,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "SPT 1,5/2-V-3,5"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19138,18 +19145,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ProPrj_New-easyedapro:CONN-TH_2P-P5.08_WJ142R-5.08-2P"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/WJ142R-5.08-02P-14-00A/36591.html"
+		(property "Footprint" "Photobooth:PhoenixContact_SPT_1.5_2-V-3.5_1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19160,7 +19156,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.phoenixcontact.com/en-gb/products/pcb-terminal-block-spt-15-2-v-35-1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19171,7 +19167,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "WJ142R-5.08-02P-14-00A"
+		(property "Description" "2-pole PCB spring terminal; 3.5 mm pitch; bare flexible wire 0.2-1.5 mm2; 17.5 A IEC / 10 A UL; open clamp with screwdriver for stranded wire"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19182,7 +19178,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KANGNEX(康奈克斯电气)"
+		(property "Manufacturer Part" "1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19193,7 +19189,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C35616"
+		(property "Manufacturer" "Phoenix Contact"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19204,7 +19200,7 @@
 				)
 			)
 		)
-		(property "Supplier" "LCSC"
+		(property "Supplier Part" "1990850"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19215,7 +19211,18 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "5.08mm 每排P数:2 排数:1"
+		(property "Supplier" "Phoenix Contact"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19238,7 +19245,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 2.54 0)
 				(length 5.08)
 				(name "1"
@@ -19256,7 +19263,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -2.54 0)
 				(length 5.08)
 				(name "2"
@@ -19403,7 +19410,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 2.54 0)
 				(length 2.54)
 				(name "1"
@@ -19421,7 +19428,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "2"
@@ -19439,7 +19446,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -5.08 -2.54 0)
 				(length 2.54)
 				(name "3"
@@ -19586,7 +19593,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -7.62 -6.35 90)
 				(length 5.08)
 				(name "1"
@@ -19604,7 +19611,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at -2.54 -6.35 90)
 				(length 5.08)
 				(name "2"
@@ -19622,7 +19629,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 2.54 -6.35 90)
 				(length 5.08)
 				(name "3"
@@ -19640,7 +19647,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 7.62 -6.35 90)
 				(length 5.08)
 				(name "4"
