@@ -1,6 +1,9 @@
 # Remaining component footprints and sourcing
 
-Verified on 2026-09-08. Standard footprint names below refer to installed KiCad 10 libraries.
+Footprints and supplier sources checked on 2026-09-08. Capacitor assignments
+reconciled on 2026-09-13 against the native KiCad `current-20260913.xml` netlist
+(KiCad 10.0.0, exported at 19:26:37); supplier availability was not rechecked.
+Standard footprint names below refer to installed KiCad 10 libraries.
 
 ## Bulk SMD capacitors
 
@@ -16,7 +19,7 @@ and 0.8-1.1 mm terminal width. The standard footprint's 4.4 x 2.5 mm lands at
 x = +/-3.7 mm provide a 3.0 mm inner gap and cover those terminals. Its 3D model
 is representative; use the selected part's 10.7 mm maximum height for enclosure clearance.
 
-The current JLCPCB product page marks this part **Extended**, and its public
+At the 2026-09-08 check, the JLCPCB product page marked this part **Extended**, and its public
 component data reported `overseasStockCount = 13902` at the check. This is a
 catalog SMT component, but it does not guarantee zero loading fees at JLCPCB,
 PCBWay or Aisler. Recheck availability, handling and quote at ordering time.
@@ -100,13 +103,14 @@ numbering and drill sizes checked. KiCad CLI SVG export also succeeds.
 | --- | --- | --- | --- | --- |
 | R26 | UNI-ROYAL 0603WAF3600T5E | C25194 | 360 ohm, 1%, 0.1 W | `Resistor_SMD:R_0603_1608Metric` |
 | R28 | UNI-ROYAL 0603WAF1002T5E | C25804 | 10 kohm, 1%, 0.1 W | `Resistor_SMD:R_0603_1608Metric` |
-| C17 | Yageo CC0603KRX7R9BB104 | C14663 | 100 nF, 50 V, X7R, 10% | `Capacitor_SMD:C_0603_1608Metric` |
+| C8/C9/C10/C11/C12/C17 | Yageo CC0603KRX7R9BB104 | C14663 | 100 nF, 50 V, X7R, 10% | `Capacitor_SMD:C_0603_1608Metric` |
 | C18 | Samsung CL21A106KAYNNNE | C15850 | 10 uF, 25 V, X5R, 10% | `Capacitor_SMD:C_0805_2012Metric` |
 | C19/C20 | Samsung CL10A105KB8NNNC | C15849 | 1 uF, 50 V, X5R, 10% | `Capacitor_SMD:C_0603_1608Metric` |
 
-C19/C20 reuse the existing C8/C9 part. Its dielectric is **X5R**, not X7R.
-C17 reuses C10-C12, and R28 reuses R13/R27. The currently retrieved JLCPCB pages
-classify C15849/C15850 as Basic and C25194 as Extended. These are sourcing
+C8/C9 now use the same 100 nF Yageo part as C10-C12/C17: six fitted pieces.
+C19/C20 retain the 1 uF Samsung part: two fitted pieces, with **X5R** dielectric.
+All eight use the same 0603 footprint. R28 reuses R13/R27. The JLCPCB pages
+retrieved on 2026-09-08 classified C15849/C15850 as Basic and C25194 as Extended. These are sourcing
 observations, not a guarantee of order-time prices or fees. No capacitor change
 removes the need to account for MLCC capacitance under operating DC bias.
 

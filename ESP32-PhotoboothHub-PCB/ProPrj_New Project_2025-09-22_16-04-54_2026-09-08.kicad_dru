@@ -2,3 +2,6 @@
 (rule "DMX isolation to other connected nets"
   (condition "A.NetName != '' && B.NetName != '' && A.hasNetclass('DMX_Isolated') && !B.hasNetclass('DMX_Isolated')")
   (constraint clearance (min 3mm)))
+(rule "Protect main 5V bus from foreign routing"
+  (condition "A.existsOnLayer('F.Cu') && A.NetName != '+5V' && A.intersectsArea('Main 5V bus routing guard')")
+  (constraint disallow track via))

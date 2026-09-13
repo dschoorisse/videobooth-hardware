@@ -9,6 +9,629 @@
 		(date "2026-09-08")
 	)
 	(lib_symbols
+		(symbol "PowerFixes:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PowerFixes:EXT_5V_ENABLE"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "EXT_5V_ENABLE"
+				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Two-pin header with removable shunt. Fit for external 5 V; remove before powered USB or for PoE-only operation."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "EXT_5V_ENABLE_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "EXT_5V_ENABLE_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "EXT_5V_ENABLE_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PowerFixes:MAX40200AUK"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -6.35 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MAX40200AUK+T"
+				(at 7.62 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX40200.pdf"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "current switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MAX40200AUK_1_1"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PowerFixes:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files no)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ProPrj_New-easyedapro:0603WAF1000T5E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2075,6 +2698,28 @@
 					)
 				)
 			)
+			(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "PTF-77_1_0"
 				(rectangle
 					(start -3.302 0.762)
@@ -2137,10 +2782,7 @@
 				)
 			)
 			(embedded_fonts no)
-
-		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+		)
 		(symbol "ProPrj_New-easyedapro:Power-5V"
 			(power global)
 			(pin_numbers
@@ -2369,6 +3011,39 @@
 					)
 				)
 			)
+			(property "Voltage Rating" "16 V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "20%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "RVT1C471M0607_1_0"
 				(polyline
 					(pts
@@ -2480,11 +3155,7 @@
 				)
 			)
 			(embedded_fonts no)
-
-		(property "Voltage Rating" "16 V" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Tolerance" "20%" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+		)
 		(symbol "ProPrj_New-easyedapro:SN74AHCT125DR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2888,631 +3559,7 @@
 			)
 			(embedded_fonts no)
 		)
-
-(symbol "PowerFixes:MAX40200AUK"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at -6.35 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MAX40200AUK+T"
-			(at 7.62 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 0 12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX40200.pdf"
-			(at 0 12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "current switch"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_fp_filters" "SOT?23*"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "MAX40200AUK_1_1"
-			(rectangle
-				(start -7.62 -5.08)
-				(end 7.62 5.08)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(pin power_in line
-				(at -10.16 2.54 0)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -7.62 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(name "EN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 7.62 -2.54 180)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
 	)
-(symbol "PowerFixes:EXT_5V_ENABLE"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "JP"
-			(at 0 2.794 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EXT_5V_ENABLE"
-			(at 0 -2.286 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Two-pin header with removable shunt. Fit for external 5 V; remove before powered USB or for PoE-only operation."
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "Jumper SPST"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "EXT_5V_ENABLE_0_0"
-			(circle
-				(center -2.032 0)
-				(radius 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "EXT_5V_ENABLE_0_1"
-			(arc
-				(start -1.524 1.27)
-				(mid 0 1.778)
-				(end 1.524 1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "EXT_5V_ENABLE_1_1"
-			(pin passive line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 5.08 0 180)
-				(length 2.54)
-				(name "B"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "PowerFixes:C"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0.254)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "C"
-			(at 0.635 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C"
-			(at 0.635 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0.9652 -3.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "cap capacitor"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_fp_filters" "C_*"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "C_0_1"
-			(polyline
-				(pts
-					(xy -2.032 0.762) (xy 2.032 0.762)
-				)
-				(stroke
-					(width 0.508)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.032 -0.762) (xy 2.032 -0.762)
-				)
-				(stroke
-					(width 0.508)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "C_1_1"
-			(pin passive line
-				(at 0 3.81 270)
-				(length 2.794)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -3.81 90)
-				(length 2.794)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "PowerFixes:PWR_FLAG"
-		(power global)
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "#FLG"
-			(at 0 1.905 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 0 3.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "flag power"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PWR_FLAG_0_0"
-			(pin power_out line
-				(at 0 0 90)
-				(length 0)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "PWR_FLAG_0_1"
-			(polyline
-				(pts
-					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-)
 	(rectangle
 		(start 21.59 20.32)
 		(end 140.97 69.85)
@@ -3561,6 +3608,28 @@
 		)
 		(uuid "f7e85c92-bcf8-489b-8db5-55dca645fc55")
 	)
+	(text "External supply: regulated 4.75-5.25 V. Place C19/C20 at U12. Lighting current bypasses U12."
+		(exclude_from_sim no)
+		(at 156.21 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2dc7fdac-2e3b-4d9f-98a9-00f1439677f1")
+	)
+	(text "JP1: fit shunt for external 5 V; REMOVE before powered USB or for PoE-only operation."
+		(exclude_from_sim no)
+		(at 156.21 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a0564373-46f2-4b0d-9f7e-4b109ebf1ed4")
+	)
 	(text "Command button"
 		(exclude_from_sim no)
 		(at 46.99 81.28 0)
@@ -3583,6 +3652,17 @@
 		)
 		(uuid "ed5b3006-a8c0-43dc-b399-229fb5c4c06f")
 	)
+	(text "Controller supply isolation"
+		(exclude_from_sim no)
+		(at 156.21 133.35 0)
+		(effects
+			(font
+				(size 1.5748 1.5748)
+			)
+			(justify left top)
+		)
+		(uuid "f9a343f9-a9ff-4249-a558-1ea51aa0deae")
+	)
 	(junction
 		(at 205.74 102.87)
 		(diameter 0)
@@ -3602,10 +3682,28 @@
 		(uuid "052cb1b0-522d-4d10-b9be-6bbd7703c8b6")
 	)
 	(junction
+		(at 220.98 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07305290-4af9-4ef3-9bb1-8f31f11f1570")
+	)
+	(junction
+		(at 184.15 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07cf3ac5-97e4-4c31-8825-60aabd79dd56")
+	)
+	(junction
 		(at 205.74 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c783fc7-4bef-40c9-9114-3c367c0e949b")
+	)
+	(junction
+		(at 176.53 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d287714-8993-47bd-b529-ff4f562c208c")
 	)
 	(junction
 		(at 207.01 97.79)
@@ -3618,6 +3716,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "344c356a-dc8b-47a6-bc84-5e5a30476b7f")
+	)
+	(junction
+		(at 176.53 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "355362f0-2b0b-4602-af88-231596038efa")
 	)
 	(junction
 		(at 68.58 121.92)
@@ -3636,6 +3740,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "527bd3b7-da72-4a64-8e53-657b2f808d2d")
+	)
+	(junction
+		(at 205.74 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56bbc540-3977-4259-b703-7fa038a6b60c")
 	)
 	(junction
 		(at 86.36 160.02)
@@ -3668,6 +3778,12 @@
 		(uuid "b7d6c663-a530-4967-a8f1-fdcc20b3d3d8")
 	)
 	(junction
+		(at 184.15 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d28d5140-ae07-42bc-ab5f-7a1d53eea76e")
+	)
+	(junction
 		(at 194.31 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3696,6 +3812,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec51be9e-0b46-4cb1-94dd-3f074a375af6")
+	)
+	(junction
+		(at 190.5 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1feead8-534e-469c-a060-79544b62db77")
 	)
 	(junction
 		(at 86.36 140.97)
@@ -3762,6 +3884,16 @@
 			(type default)
 		)
 		(uuid "01053189-f944-4919-a3e3-da37e206476c")
+	)
+	(wire
+		(pts
+			(xy 220.98 146.05) (xy 233.68 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "046a70a6-186e-4ceb-aec3-f210fdc26567")
 	)
 	(wire
 		(pts
@@ -3885,6 +4017,26 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 156.21) (xy 184.15 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18912c19-5f69-4530-a608-ab8036747a74")
+	)
+	(wire
+		(pts
+			(xy 243.84 146.05) (xy 259.08 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e014a40-9de5-462c-a05c-2ac752db7639")
+	)
+	(wire
+		(pts
 			(xy 184.15 97.79) (xy 182.88 97.79)
 		)
 		(stroke
@@ -3912,6 +4064,16 @@
 			(type default)
 		)
 		(uuid "22b49069-006b-4098-91c4-31680d9cdb44")
+	)
+	(wire
+		(pts
+			(xy 176.53 146.05) (xy 184.15 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2500b460-6a35-4ef4-9c85-e2cbcd7aacb6")
 	)
 	(wire
 		(pts
@@ -3955,7 +4117,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 33.02) (xy 62.23 34.29)
+			(xy 63.5 30.48) (xy 63.5 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4005,6 +4167,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 146.05) (xy 176.53 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3347cc7d-d46c-4acc-903e-874b57bf70af")
+	)
+	(wire
+		(pts
 			(xy 205.74 54.61) (xy 205.74 62.23)
 		)
 		(stroke
@@ -4012,6 +4184,16 @@
 			(type default)
 		)
 		(uuid "33e4a41a-23e6-4f6e-a7d5-a6ba100d748f")
+	)
+	(wire
+		(pts
+			(xy 176.53 158.75) (xy 184.15 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35603616-2d63-400e-8bd2-6f9624eabb4b")
 	)
 	(wire
 		(pts
@@ -4055,6 +4237,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 146.05) (xy 184.15 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e2f3be0-4595-4a85-b56c-8721855c7a2d")
+	)
+	(wire
+		(pts
 			(xy 184.15 102.87) (xy 170.18 102.87)
 		)
 		(stroke
@@ -4062,6 +4254,16 @@
 			(type default)
 		)
 		(uuid "3f14e92c-0fb4-416f-8c77-dc5fe13ef78e")
+	)
+	(wire
+		(pts
+			(xy 171.45 158.75) (xy 176.53 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f5929fb-1e1e-423d-96c1-594f7bbc12ec")
 	)
 	(wire
 		(pts
@@ -4125,6 +4327,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 151.13) (xy 195.58 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f683ddc-8ef2-48fc-a2dc-738dba9e7597")
+	)
+	(wire
+		(pts
 			(xy 184.15 54.61) (xy 173.99 54.61)
 		)
 		(stroke
@@ -4165,13 +4377,23 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 34.29) (xy 68.58 34.29)
+			(xy 63.5 34.29) (xy 68.58 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "59ce1af1-9972-4bcc-b143-a5f5a95bf7cc")
+	)
+	(wire
+		(pts
+			(xy 205.74 158.75) (xy 220.98 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a3fa386-b6cc-42ac-baed-fa3940c9493b")
 	)
 	(wire
 		(pts
@@ -4262,6 +4484,16 @@
 			(type default)
 		)
 		(uuid "6bc027da-544b-46ac-a5f0-1b7d1e69e2e4")
+	)
+	(wire
+		(pts
+			(xy 205.74 156.21) (xy 205.74 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf4c19b-02f0-49c4-944a-2f25f2ba6e0e")
 	)
 	(wire
 		(pts
@@ -4445,6 +4677,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 146.05) (xy 220.98 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f26e856-578f-4861-8281-62ee82cc80d4")
+	)
+	(wire
+		(pts
 			(xy 194.31 74.93) (xy 182.88 74.93)
 		)
 		(stroke
@@ -4502,6 +4744,16 @@
 			(type default)
 		)
 		(uuid "940a1294-2c4d-42c1-acd6-7fe2249b3ca0")
+	)
+	(wire
+		(pts
+			(xy 190.5 146.05) (xy 195.58 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "947b0bc2-b804-40be-98c0-3e9b1fac4baf")
 	)
 	(wire
 		(pts
@@ -4615,6 +4867,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 146.05) (xy 190.5 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af01baf5-c878-4d36-81dd-93bf72db5319")
+	)
+	(wire
+		(pts
 			(xy 204.47 97.79) (xy 207.01 97.79)
 		)
 		(stroke
@@ -4632,6 +4894,16 @@
 			(type default)
 		)
 		(uuid "afe70f71-6abc-4c37-86b8-bf35c2f524dd")
+	)
+	(wire
+		(pts
+			(xy 220.98 146.05) (xy 220.98 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b262b588-2da8-466f-b429-8168bf13b84b")
 	)
 	(wire
 		(pts
@@ -4885,6 +5157,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 146.05) (xy 190.5 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de3a8272-282b-4105-81c4-698952848f90")
+	)
+	(wire
+		(pts
 			(xy 246.38 45.72) (xy 179.07 45.72)
 		)
 		(stroke
@@ -4892,6 +5174,16 @@
 			(type default)
 		)
 		(uuid "df21ff7c-b2c7-4376-bec7-624c8d1b3f7f")
+	)
+	(wire
+		(pts
+			(xy 184.15 158.75) (xy 205.74 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48a5159-44c5-4b8a-b4fd-2823ff0ecc80")
 	)
 	(wire
 		(pts
@@ -4932,6 +5224,16 @@
 			(type default)
 		)
 		(uuid "ebbbe53d-8ad8-48d6-81a2-77c31d8dd7d5")
+	)
+	(wire
+		(pts
+			(xy 220.98 156.21) (xy 220.98 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec50ee39-0b75-41b0-84bc-6b6dc4d2e9f3")
 	)
 	(wire
 		(pts
@@ -5047,6 +5349,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape passive)
+		(at 171.45 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "31414719-cd15-48d7-9302-85545e650d9a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.45 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "LIGHT_PRINTER_CLK"
 		(shape output)
 		(at 96.52 52.07 0)
@@ -5103,6 +5427,28 @@
 		(uuid "408b55be-5021-4e6d-9b3a-1e3299eae906")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 40.64 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "MCU_5V"
+		(shape passive)
+		(at 259.08 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49917091-4ea7-44b3-aaac-b664f14f8b6a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 259.08 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5257,6 +5603,50 @@
 		(uuid "90a35da4-95c9-430a-9cbe-e99fcb6879c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.52 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "MCU_5V"
+		(shape passive)
+		(at 63.5 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99ef4412-4571-4b6e-a5ae-59afb68442cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.5 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape passive)
+		(at 171.45 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9ba8bcd1-6149-4835-832a-d6cb980e3e41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.45 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5751,6 +6141,61 @@
 				)
 			)
 		)
+		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture"
+			(at 73.66 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout"
+			(at 73.66 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Model" "CNT-06 / MICRO2"
+			(at 73.66 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "FUSE_LIGHT_PRINTER"
+			(at 73.66 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Printer lighting"
+			(at 76.2 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(pin "1"
 			(uuid "f8f5b9bd-02b6-471c-b26e-24857c4bd640")
 		)
@@ -5765,14 +6210,7 @@
 				)
 			)
 		)
-
-		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture" (at 73.66 140.97 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout" (at 73.66 140.97 0) (hide yes) (effects (font (size 1.27 1.27))))
-
-(property "Model" "CNT-06 / MICRO2" (at 73.66 140.97 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "FUSE_LIGHT_PRINTER" (at 73.66 140.97 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Printer lighting" (at 76.2 139.7 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:Ground-GND")
 		(at 219.71 97.79 90)
@@ -5972,6 +6410,39 @@
 				)
 			)
 		)
+		(property "Voltage Rating" "16 V"
+			(at 86.36 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 86.36 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote"
+			(at 86.36 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9bbe22c3-8945-44a5-a40a-4aa97e9f7be2")
 		)
@@ -5986,11 +6457,7 @@
 				)
 			)
 		)
-
-		(property "Voltage Rating" "16 V" (at 86.36 165.1 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Tolerance" "20%" (at 86.36 165.1 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote" (at 86.36 165.1 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:0603WAF1000T5E")
 		(at 256.54 91.44 0)
@@ -6615,6 +7082,61 @@
 				)
 			)
 		)
+		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture"
+			(at 36.83 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout"
+			(at 36.83 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Model" "CNT-06 / MICRO2"
+			(at 36.83 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "FUSE_PSU"
+			(at 36.83 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Main supply"
+			(at 39.37 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(pin "2"
 			(uuid "b11c346e-d3ff-41b0-a696-2a6def9872b2")
 		)
@@ -6629,14 +7151,7 @@
 				)
 			)
 		)
-
-		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture" (at 36.83 120.65 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout" (at 36.83 120.65 0) (hide yes) (effects (font (size 1.27 1.27))))
-
-(property "Model" "CNT-06 / MICRO2" (at 36.83 120.65 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "FUSE_PSU" (at 36.83 120.65 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Main supply" (at 39.37 119.38 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:PTF-77")
 		(at 73.66 160.02 0)
@@ -6758,6 +7273,61 @@
 				)
 			)
 		)
+		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture"
+			(at 73.66 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout"
+			(at 73.66 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Model" "CNT-06 / MICRO2"
+			(at 73.66 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "FUSE_LIGHT_TRUSS"
+			(at 73.66 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Down lighting"
+			(at 76.2 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(pin "1"
 			(uuid "abb93fea-56f3-4cf5-abcc-7674bdb20b10")
 		)
@@ -6772,14 +7342,7 @@
 				)
 			)
 		)
-
-		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture" (at 73.66 160.02 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout" (at 73.66 160.02 0) (hide yes) (effects (font (size 1.27 1.27))))
-
-(property "Model" "CNT-06 / MICRO2" (at 73.66 160.02 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "FUSE_LIGHT_TRUSS" (at 73.66 160.02 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Down lighting" (at 76.2 158.75 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:Power-5V")
 		(at 55.88 119.38 0)
@@ -6852,6 +7415,129 @@
 			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
 				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
 					(reference "#PWR0006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PowerFixes:EXT_5V_ENABLE")
+		(at 238.76 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2f67f19c-9ea3-4274-9dbb-2b1a5a58abf9")
+		(property "Reference" "JP1"
+			(at 238.76 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EXT_5V_ENABLE"
+			(at 245.24 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 238.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.harwin.com/products/M20-9990246"
+			(at 238.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Two-pin header with removable shunt. Fit for external 5 V; remove before powered USB or for PoE-only operation."
+			(at 238.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly Note" "Populate the 1x02 2.54 mm header and supply a removable shunt. Fit shunt for external 5 V. Remove before powered USB or for PoE-only operation."
+			(at 238.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 238.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "M20-9990246"
+			(at 238.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mating Shunt" "Harwin M7566-46; remove before powered USB"
+			(at 238.76 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e394ed20-7d6d-4fc1-a4dd-93aa117ff5d5")
+		)
+		(pin "2"
+			(uuid "eaedb40c-e676-431a-9010-b04aa485dc18")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -6979,6 +7665,39 @@
 				)
 			)
 		)
+		(property "Model" "SPT 1,5/4-V-3,5"
+			(at 270.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "CON_LIGHT_FRONT"
+			(at 270.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Front lighting"
+			(at 270.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9ba05609-14cf-4bde-81bb-aabd3312bb5a")
 		)
@@ -6999,11 +7718,241 @@
 				)
 			)
 		)
-
-(property "Model" "SPT 1,5/4-V-3,5" (at 270.51 41.91 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "CON_LIGHT_FRONT" (at 270.51 41.91 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Front lighting" (at 270.51 41.91 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
+	(symbol
+		(lib_id "PowerFixes:PWR_FLAG")
+		(at 176.53 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "45b55c79-d395-4296-a837-4da4d5ab1d9b")
+		(property "Reference" "#FLG101"
+			(at 176.53 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 176.53 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 176.53 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e06b8d3-3082-4fdd-a20d-2252abd9919f")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
+					(reference "#FLG101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PowerFixes:C")
+		(at 220.98 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46e71036-61d0-4113-8b69-efff3d317d74")
+		(property "Reference" "C20"
+			(at 227.33 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF / 50V"
+			(at 229.87 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C15849"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF 50V X5R 10%, 0603"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C15849"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50 V"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 220.98 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8354f6c9-5b02-4664-82ac-d8232e59e613")
+		)
+		(pin "2"
+			(uuid "c4128204-3a13-49da-b0d5-f7dba35b94b3")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:SN74AHCT125DR")
 		(at 194.31 59.69 0)
@@ -7298,6 +8247,39 @@
 				)
 			)
 		)
+		(property "Model" "SPT 1,5/4-V-3,5"
+			(at 270.51 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "CON_LIGHT_PRINTER"
+			(at 270.51 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Printer lighting"
+			(at 270.51 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "f1ec917a-82dd-4134-9705-3fb6dd905841")
 		)
@@ -7318,11 +8300,7 @@
 				)
 			)
 		)
-
-(property "Model" "SPT 1,5/4-V-3,5" (at 270.51 60.96 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "CON_LIGHT_PRINTER" (at 270.51 60.96 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Printer lighting" (at 270.51 60.96 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:KF250NH-3.5-2P")
 		(at 54.61 88.9 90)
@@ -7445,6 +8423,39 @@
 				)
 			)
 		)
+		(property "Model" "SPT 1,5/2-V-3,5"
+			(at 54.61 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "CON_CMD_BTN"
+			(at 54.61 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Command button"
+			(at 54.61 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ee3adba1-92f5-49e8-b7c7-9b179f3d3607")
 		)
@@ -7459,11 +8470,163 @@
 				)
 			)
 		)
-
-(property "Model" "SPT 1,5/2-V-3,5" (at 54.61 88.9 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "CON_CMD_BTN" (at 54.61 88.9 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Command button" (at 54.61 88.9 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
+	(symbol
+		(lib_id "PowerFixes:C")
+		(at 184.15 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6210a46d-134d-47ca-9a83-a728db152b51")
+		(property "Reference" "C19"
+			(at 177.8 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF / 50V"
+			(at 176.53 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C15849"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1uF 50V X5R 10%, 0603"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL10A105KB8NNNC"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C15849"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50 V"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 184.15 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1cc96091-2e6e-4b6f-adc7-9ebc30b8ae72")
+		)
+		(pin "2"
+			(uuid "a9cb8964-0891-408a-ab2d-a72ae1541acb")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:Ground-GND")
 		(at 91.44 170.18 90)
@@ -7699,7 +8862,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "100nF"
 			(at 218.44 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7721,7 +8884,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CC0603KRX7R9BB104/15331.html"
 			(at 213.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7732,7 +8895,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitance:100nF Tolerance:±10% Tolerance:±10% Voltage Rating:50V Temperature Coefficient:X7R"
 			(at 213.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7743,7 +8906,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "CL10A105KB8NNNC"
+		(property "Manufacturer Part" "CC0603KRX7R9BB104"
 			(at 213.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7754,7 +8917,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG(三星)"
+		(property "Manufacturer" "YAGEO(国巨)"
 			(at 213.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7765,7 +8928,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C15849"
+		(property "Supplier Part" "C14663"
 			(at 213.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7787,7 +8950,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "1uF ±10% 50V"
+		(property "LCSC Part Name" "100nF ±10% 50V"
 			(at 213.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -8070,6 +9233,61 @@
 				)
 			)
 		)
+		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture"
+			(at 73.66 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout"
+			(at 73.66 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Model" "CNT-06 / MICRO2"
+			(at 73.66 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "FUSE_LIGHT_FRONT"
+			(at 73.66 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Front lighting"
+			(at 76.2 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
 		(pin "2"
 			(uuid "801a5e64-ef84-4cc8-86ed-e9093c0dfd74")
 		)
@@ -8084,14 +9302,7 @@
 				)
 			)
 		)
-
-		(property "Fitted Fuse" "OptiFuse ANT/APT; current rating TBD before manufacture" (at 73.66 121.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly" "Fit holder and separately selected fuse; verify seating, extraction access and retention cutout" (at 73.66 121.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-
-(property "Model" "CNT-06 / MICRO2" (at 73.66 121.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "FUSE_LIGHT_FRONT" (at 73.66 121.92 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Front lighting" (at 76.2 120.65 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:RVT1C471M0607")
 		(at 86.36 146.05 270)
@@ -8214,6 +9425,39 @@
 				)
 			)
 		)
+		(property "Voltage Rating" "16 V"
+			(at 86.36 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 86.36 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote"
+			(at 86.36 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e30d9904-301a-44bd-9c39-ec9281a6a13b")
 		)
@@ -8228,11 +9472,7 @@
 				)
 			)
 		)
-
-		(property "Voltage Rating" "16 V" (at 86.36 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Tolerance" "20%" (at 86.36 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote" (at 86.36 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:Ground-GND")
 		(at 195.58 120.65 0)
@@ -9149,6 +10389,39 @@
 				)
 			)
 		)
+		(property "Voltage Rating" "16 V"
+			(at 55.88 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 55.88 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote"
+			(at 55.88 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c09e2998-ca51-4803-93ef-aef241bfc18f")
 		)
@@ -9163,11 +10436,7 @@
 				)
 			)
 		)
-
-		(property "Voltage Rating" "16 V" (at 55.88 130.81 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Tolerance" "20%" (at 55.88 130.81 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote" (at 55.88 130.81 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:Ground-GND")
 		(at 44.45 33.02 0)
@@ -9536,7 +10805,116 @@
 			)
 		)
 	)
-	(global_label "MCU_5V" (shape passive) (at 62.23 33.02 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "99ef4412-4571-4b6e-a5ae-59afb68442cd"))
+	(symbol
+		(lib_id "PowerFixes:MAX40200AUK")
+		(at 205.74 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c1ce5c93-9ae8-496a-9ede-97d432e6da3b")
+		(property "Reference" "U12"
+			(at 204.47 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MAX40200AUK+T"
+			(at 205.74 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 205.74 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX40200.pdf"
+			(at 205.74 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5"
+			(at 205.74 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 205.74 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "MAX40200AUK+T"
+			(at 205.74 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e66ba018-4de7-4f8e-9201-1482badc26c0")
+		)
+		(pin "2"
+			(uuid "607b622e-1616-4a49-84d2-2fb6b1e2e7ca")
+		)
+		(pin "3"
+			(uuid "a39d23ef-5751-4ecc-a7d6-4b6baec004c3")
+		)
+		(pin "4"
+			(uuid "8ad8037a-bbac-480a-9641-87e3c27db7ee")
+		)
+		(pin "5"
+			(uuid "76b84cc6-6250-4b5a-bfac-c9e4b5ce8b4c")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:FC-2012HRK-620D")
 		(at 138.43 140.97 270)
@@ -9659,6 +11037,39 @@
 				)
 			)
 		)
+		(property "Model" "NCD0805R1"
+			(at 138.43 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "PWR_LED"
+			(at 138.43 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Power indicator"
+			(at 138.43 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b899d05d-c319-479c-a883-256188b4274e")
 		)
@@ -9673,11 +11084,7 @@
 				)
 			)
 		)
-
-(property "Model" "NCD0805R1" (at 138.43 140.97 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "PWR_LED" (at 138.43 140.97 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Power indicator" (at 138.43 140.97 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:ESP32-POE-ISO")
 		(at 82.55 45.72 0)
@@ -9967,7 +11374,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "100nF"
 			(at 210.82 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9989,7 +11396,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/CL10A105KB8NNNC/16531.html"
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/CC0603KRX7R9BB104/15331.html"
 			(at 213.36 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10000,7 +11407,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Capacitance:100nF Tolerance:±10% Tolerance:±10% Voltage Rating:50V Temperature Coefficient:X7R"
 			(at 213.36 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10011,7 +11418,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "CL10A105KB8NNNC"
+		(property "Manufacturer Part" "CC0603KRX7R9BB104"
 			(at 213.36 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10022,7 +11429,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG(三星)"
+		(property "Manufacturer" "YAGEO(国巨)"
 			(at 213.36 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10033,7 +11440,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C15849"
+		(property "Supplier Part" "C14663"
 			(at 213.36 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10055,7 +11462,7 @@
 				)
 			)
 		)
-		(property "LCSC Part Name" "1uF ±10% 50V"
+		(property "LCSC Part Name" "100nF ±10% 50V"
 			(at 213.36 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10153,6 +11560,84 @@
 			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
 				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
 					(reference "#PWR0017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PowerFixes:PWR_FLAG")
+		(at 176.53 158.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "d2957637-578f-4784-8290-d314cda7dcee")
+		(property "Reference" "#FLG102"
+			(at 176.53 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 176.53 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 176.53 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c8b73b1-6a25-4199-9c40-6d6c1c1ada1e")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4"
+					(reference "#FLG102")
 					(unit 1)
 				)
 			)
@@ -10452,6 +11937,39 @@
 				)
 			)
 		)
+		(property "Voltage Rating" "16 V"
+			(at 86.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 86.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote"
+			(at 86.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c90d3101-eaa5-4696-a585-1d38f7dc6399")
 		)
@@ -10466,11 +11984,7 @@
 				)
 			)
 		)
-
-		(property "Voltage Rating" "16 V" (at 86.36 127 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Tolerance" "20%" (at 86.36 127 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Assembly Class" "JLCPCB Extended (checked 2026-09-08); standard catalog part, verify quote" (at 86.36 127 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:Power-5V")
 		(at 68.58 119.38 0)
@@ -10670,6 +12184,39 @@
 				)
 			)
 		)
+		(property "Model" "SPT 1,5/2-V-3,5"
+			(at 24.13 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "CON_PSU"
+			(at 24.13 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "5 V supply"
+			(at 24.13 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5336e855-8b82-44ac-8153-fb0a4a7697a1")
 		)
@@ -10684,11 +12231,7 @@
 				)
 			)
 		)
-
-(property "Model" "SPT 1,5/2-V-3,5" (at 24.13 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "CON_PSU" (at 24.13 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "5 V supply" (at 24.13 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:KF250NH-3.5-4P")
 		(at 270.51 87.63 0)
@@ -10811,6 +12354,39 @@
 				)
 			)
 		)
+		(property "Model" "SPT 1,5/4-V-3,5"
+			(at 270.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "CON_LIGHT_DOWN"
+			(at 270.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Down lighting"
+			(at 270.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2a10a0d7-847e-4de7-9d6a-abd4dde6533f")
 		)
@@ -10831,122 +12407,5 @@
 				)
 			)
 		)
-
-(property "Model" "SPT 1,5/4-V-3,5" (at 270.51 87.63 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "CON_LIGHT_DOWN" (at 270.51 87.63 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Down lighting" (at 270.51 87.63 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
-
-(symbol (lib_id "PowerFixes:MAX40200AUK") (at 205.74 148.59 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "c1ce5c93-9ae8-496a-9ede-97d432e6da3b")
-(property "Reference" "U12" (at 204.47 138.43 0) (effects (font (size 1.27 1.27))))
-(property "Value" "MAX40200AUK+T" (at 205.74 140.97 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 205.74 148.59 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX40200.pdf" (at 205.74 148.59 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5" (at 205.74 148.59 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer" "Analog Devices" (at 205.74 148.59 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer Part" "MAX40200AUK+T" (at 205.74 148.59 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "e66ba018-4de7-4f8e-9201-1482badc26c0"))
-(pin "2" (uuid "607b622e-1616-4a49-84d2-2fb6b1e2e7ca"))
-(pin "3" (uuid "a39d23ef-5751-4ecc-a7d6-4b6baec004c3"))
-(pin "4" (uuid "8ad8037a-bbac-480a-9641-87e3c27db7ee"))
-(pin "5" (uuid "76b84cc6-6250-4b5a-bfac-c9e4b5ce8b4c"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4" (reference "U12") (unit 1)))))
-(symbol (lib_id "PowerFixes:C") (at 184.15 152.4 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "6210a46d-134d-47ca-9a83-a728db152b51")
-(property "Reference" "C19" (at 177.8 149.86 0) (effects (font (size 1.27 1.27))))
-(property "Value" "1uF / 50V" (at 176.53 152.4 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://jlcpcb.com/partdetail/C15849" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "1uF 50V X5R 10%, 0603" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer" "Samsung" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer Part" "CL10A105KB8NNNC" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Supplier" "LCSC" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Supplier Part" "C15849" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Tolerance" "10%" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Voltage Rating" "50 V" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Dielectric" "X5R" (at 184.15 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "1cc96091-2e6e-4b6f-adc7-9ebc30b8ae72"))
-(pin "2" (uuid "a9cb8964-0891-408a-ab2d-a72ae1541acb"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4" (reference "C19") (unit 1)))))
-(symbol (lib_id "PowerFixes:C") (at 220.98 152.4 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "46e71036-61d0-4113-8b69-efff3d317d74")
-(property "Reference" "C20" (at 227.33 151.13 0) (effects (font (size 1.27 1.27))))
-(property "Value" "1uF / 50V" (at 229.87 153.67 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://jlcpcb.com/partdetail/C15849" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "1uF 50V X5R 10%, 0603" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer" "Samsung" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer Part" "CL10A105KB8NNNC" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Supplier" "LCSC" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Supplier Part" "C15849" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Tolerance" "10%" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Voltage Rating" "50 V" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Dielectric" "X5R" (at 220.98 152.4 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "8354f6c9-5b02-4664-82ac-d8232e59e613"))
-(pin "2" (uuid "c4128204-3a13-49da-b0d5-f7dba35b94b3"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4" (reference "C20") (unit 1)))))
-(symbol (lib_id "PowerFixes:EXT_5V_ENABLE") (at 238.76 146.05 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "2f67f19c-9ea3-4274-9dbb-2b1a5a58abf9")
-(property "Reference" "JP1" (at 238.76 138.43 0) (effects (font (size 1.27 1.27))))
-(property "Value" "EXT_5V_ENABLE" (at 245.24 140.97 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 238.76 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://www.harwin.com/products/M20-9990246" (at 238.76 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "Two-pin header with removable shunt. Fit for external 5 V; remove before powered USB or for PoE-only operation." (at 238.76 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Assembly Note" "Populate the 1x02 2.54 mm header and supply a removable shunt. Fit shunt for external 5 V. Remove before powered USB or for PoE-only operation." (at 238.76 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Manufacturer" "Harwin" (at 238.76 146.05 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Manufacturer Part" "M20-9990246" (at 238.76 146.05 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Mating Shunt" "Harwin M7566-46; remove before powered USB" (at 238.76 146.05 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-(pin "1" (uuid "e394ed20-7d6d-4fc1-a4dd-93aa117ff5d5"))
-(pin "2" (uuid "eaedb40c-e676-431a-9010-b04aa485dc18"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4" (reference "JP1") (unit 1)))))
-(wire (pts (xy 171.45 146.05) (xy 176.53 146.05)) (stroke (width 0) (type default)) (uuid "3347cc7d-d46c-4acc-903e-874b57bf70af"))
-(wire (pts (xy 176.53 146.05) (xy 184.15 146.05)) (stroke (width 0) (type default)) (uuid "2500b460-6a35-4ef4-9c85-e2cbcd7aacb6"))
-(wire (pts (xy 184.15 146.05) (xy 190.5 146.05)) (stroke (width 0) (type default)) (uuid "af01baf5-c878-4d36-81dd-93bf72db5319"))
-(wire (pts (xy 190.5 146.05) (xy 195.58 146.05)) (stroke (width 0) (type default)) (uuid "947b0bc2-b804-40be-98c0-3e9b1fac4baf"))
-(global_label "+5V" (shape passive) (at 171.45 146.05 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "9ba8bcd1-6149-4835-832a-d6cb980e3e41"))
-(wire (pts (xy 184.15 146.05) (xy 184.15 148.59)) (stroke (width 0) (type default)) (uuid "3e2f3be0-4595-4a85-b56c-8721855c7a2d"))
-(junction (at 184.15 146.05) (diameter 0) (color 0 0 0 0) (uuid "07cf3ac5-97e4-4c31-8825-60aabd79dd56"))
-(wire (pts (xy 190.5 146.05) (xy 190.5 151.13)) (stroke (width 0) (type default)) (uuid "de3a8272-282b-4105-81c4-698952848f90"))
-(wire (pts (xy 190.5 151.13) (xy 195.58 151.13)) (stroke (width 0) (type default)) (uuid "4f683ddc-8ef2-48fc-a2dc-738dba9e7597"))
-(junction (at 190.5 146.05) (diameter 0) (color 0 0 0 0) (uuid "f1feead8-534e-469c-a060-79544b62db77"))
-(wire (pts (xy 171.45 158.75) (xy 176.53 158.75)) (stroke (width 0) (type default)) (uuid "3f5929fb-1e1e-423d-96c1-594f7bbc12ec"))
-(wire (pts (xy 176.53 158.75) (xy 184.15 158.75)) (stroke (width 0) (type default)) (uuid "35603616-2d63-400e-8bd2-6f9624eabb4b"))
-(wire (pts (xy 184.15 158.75) (xy 205.74 158.75)) (stroke (width 0) (type default)) (uuid "e48a5159-44c5-4b8a-b4fd-2823ff0ecc80"))
-(wire (pts (xy 205.74 158.75) (xy 220.98 158.75)) (stroke (width 0) (type default)) (uuid "5a3fa386-b6cc-42ac-baed-fa3940c9493b"))
-(global_label "GND" (shape passive) (at 171.45 158.75 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "31414719-cd15-48d7-9302-85545e650d9a"))
-(wire (pts (xy 184.15 156.21) (xy 184.15 158.75)) (stroke (width 0) (type default)) (uuid "18912c19-5f69-4530-a608-ab8036747a74"))
-(junction (at 184.15 158.75) (diameter 0) (color 0 0 0 0) (uuid "d28d5140-ae07-42bc-ab5f-7a1d53eea76e"))
-(wire (pts (xy 205.74 156.21) (xy 205.74 158.75)) (stroke (width 0) (type default)) (uuid "6bf4c19b-02f0-49c4-944a-2f25f2ba6e0e"))
-(junction (at 205.74 158.75) (diameter 0) (color 0 0 0 0) (uuid "56bbc540-3977-4259-b703-7fa038a6b60c"))
-(wire (pts (xy 220.98 156.21) (xy 220.98 158.75)) (stroke (width 0) (type default)) (uuid "ec50ee39-0b75-41b0-84bc-6b6dc4d2e9f3"))
-(wire (pts (xy 215.9 146.05) (xy 220.98 146.05)) (stroke (width 0) (type default)) (uuid "8f26e856-578f-4861-8281-62ee82cc80d4"))
-(wire (pts (xy 220.98 146.05) (xy 233.68 146.05)) (stroke (width 0) (type default)) (uuid "046a70a6-186e-4ceb-aec3-f210fdc26567"))
-(wire (pts (xy 220.98 146.05) (xy 220.98 148.59)) (stroke (width 0) (type default)) (uuid "b262b588-2da8-466f-b429-8168bf13b84b"))
-(junction (at 220.98 146.05) (diameter 0) (color 0 0 0 0) (uuid "07305290-4af9-4ef3-9bb1-8f31f11f1570"))
-(wire (pts (xy 243.84 146.05) (xy 259.08 146.05)) (stroke (width 0) (type default)) (uuid "1e014a40-9de5-462c-a05c-2ac752db7639"))
-(global_label "MCU_5V" (shape passive) (at 259.08 146.05 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "49917091-4ea7-44b3-aaac-b664f14f8b6a"))
-(symbol (lib_id "PowerFixes:PWR_FLAG") (at 176.53 146.05 0) (unit 1) (exclude_from_sim yes) (in_bom no) (on_board no) (in_pos_files no) (dnp no) (uuid "45b55c79-d395-4296-a837-4da4d5ab1d9b")
-(property "Reference" "#FLG101" (at 176.53 137.16 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Value" "PWR_FLAG" (at 176.53 154.94 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Footprint" "" (at 176.53 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "" (at 176.53 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "Special symbol for telling ERC where power comes from" (at 176.53 146.05 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "3e06b8d3-3082-4fdd-a20d-2252abd9919f"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4" (reference "#FLG101") (unit 1)))))
-(junction (at 176.53 146.05) (diameter 0) (color 0 0 0 0) (uuid "2d287714-8993-47bd-b529-ff4f562c208c"))
-(symbol (lib_id "PowerFixes:PWR_FLAG") (at 176.53 158.75 0) (unit 1) (exclude_from_sim yes) (in_bom no) (on_board no) (in_pos_files no) (dnp no) (uuid "d2957637-578f-4784-8290-d314cda7dcee")
-(property "Reference" "#FLG102" (at 176.53 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Value" "PWR_FLAG" (at 176.53 167.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Footprint" "" (at 176.53 158.75 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "" (at 176.53 158.75 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "Special symbol for telling ERC where power comes from" (at 176.53 158.75 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "1c8b73b1-6a25-4199-9c40-6d6c1c1ada1e"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/2f3692dd-5578-416b-b523-c1cbab56c6b4" (reference "#FLG102") (unit 1)))))
-(junction (at 176.53 158.75) (diameter 0) (color 0 0 0 0) (uuid "355362f0-2b0b-4602-af88-231596038efa"))
-(text "Controller supply isolation" (exclude_from_sim no) (at 156.21 133.35 0) (effects (font (size 1.5748 1.5748)) (justify left top)) (uuid "f9a343f9-a9ff-4249-a558-1ea51aa0deae"))
-(text "JP1: fit shunt for external 5 V; REMOVE before powered USB or for PoE-only operation." (exclude_from_sim no) (at 156.21 163.83 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "a0564373-46f2-4b0d-9f7e-4b109ebf1ed4"))
-(text "External supply: regulated 4.75-5.25 V. Place C19/C20 at U12. Lighting current bypasses U12." (exclude_from_sim no) (at 156.21 167.64 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "2dc7fdac-2e3b-4d9f-98a9-00f1439677f1"))
+	)
 )

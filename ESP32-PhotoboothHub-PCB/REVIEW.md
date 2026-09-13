@@ -1,14 +1,15 @@
 # Schematic changes and release checks
 
-Updated 2026-09-08 against imported baseline commit `b2cbc42`.
+Updated 2026-09-13 against imported baseline commit `b2cbc42` and placement checkpoint `ed387a4`.
 
 The fixes are implemented. KiCad 10 ERC reports **zero errors and zero warnings**
 with the existing rule configuration. All 56 physical component instances,
 including DNP R9, have loadable footprints with matching electrical pad numbers.
-There is now a **100 × 130 mm unrouted PCB placement**, with Ethernet on the
-right. Native PCB DRC reports zero placement violations and zero schematic-parity
-issues, with 147 unconnected items remaining. These checks do not establish
-routing, thermal performance, mechanical fit or fabrication readiness.
+The **100 × 130 mm PCB is fully routed**, with Ethernet on the right. Native PCB
+DRC after filling and saving all zones reports **zero violations, zero unconnected
+items and zero schematic-parity issues**. The layout and actual filled copper
+have also been visually and independently reviewed. Prototype thermal testing,
+mechanical fit and fuse qualification remain before production.
 
 Design inputs: external 5 V supply, 40 W maximum total load (8 A at 5 V),
 bare stranded 1.5 mm² wire without ferrules, and the 98 mm Olimex ESP32-POE-ISO.
@@ -24,6 +25,7 @@ The external DIN rail camera converter is outside this review.
 | DMX transceiver | U4 TI THVD1500DR, SOIC-8, replaces the incorrectly supplied 3.3 V part. |
 | Optocoupler drive | U11 SN74LVC1G07DBVR, R26 = 360 Ω, input pull-up and decoupling provide defined ON/OFF behavior. U7 enable is tied high. |
 | Bulk capacitors | C7/C14/C15/C16 are 470 µF, 16 V SMD electrolytics, Honor Elec RVT1C471M0810 / C3341. |
+| Buffer bypass | C8/C9 are 100 nF Yageo CC0603KRX7R9BB104 / C14663 in 0603, with short supply spurs and local ground vias. |
 | Connectors | Seven Phoenix Contact SPT vertical wire-entry terminal blocks with verified project-local footprints. |
 | Fuses | F1–F4 use compact vertical OptiFuse CNT-06 holders; actual fuse current ratings remain TBD. |
 | Module footprint | Olimex header spacing, pin mapping, outline and mounting guides verified from manufacturer files. |
@@ -213,6 +215,13 @@ Validation performed:
 5. All **56 physical instances / 19 unique footprints** load in KiCad, with
    electrical pad numbers matching their symbols.
 6. Exported drawings and new mechanical footprint geometry were visually checked.
+7. Native PCB DRC after final zone refill: **0 violations, 0 unconnected items,
+   0 schematic-parity issues**. Reports and reproduction commands are in
+   [validation](docs/validation/README.md).
+8. Actual filled copper has a continuous 5 V bus, short back-layer lighting
+   crossings, broad ground return, explicit Q1/U11 ground connections, and
+   separate primary/DMX ground regions. The custom bus guard was checked with
+   deliberately invalid witness geometry. See [layout review](docs/pcb-layout.md).
 
 The six lighting data/clock connections still match `PhotoboothHub.yaml`.
 AHCT125 enables, unused inputs and supplies retain the reviewed wiring. The camera
@@ -223,10 +232,16 @@ reset relay retains its low-side transistor drive and flyback diode.
 - Select actual main and branch fuse ratings from branch currents, startup
   behavior, fuse curves, wiring and planned copper. Only total power is known.
 - Confirm the PSU maintains 4.75–5.25 V at the board under load.
-- Complete PCB routing, including copper suitable for the 8 A main path,
-  DMX isolation spacing and local decoupling. The initial placement, mounting
-  holes and copper keepouts are recorded in [PCB layout constraints](docs/pcb-layout.md)
-  and the [placement preview](docs/pcb-placement.png).
+- Qualify the routed power paths at maximum load and ambient temperature. The
+  continuous bus, dual-face input/output tracks, isolation spacing and local
+  bypass layout are recorded in [PCB layout review](docs/pcb-layout.md), the
+  [assembly preview](docs/pcb-placement.png) and [copper preview](docs/pcb-routing.png).
+- Check K3's **NC-contact DC capability** against camera voltage, current and
+  inrush. Its datasheet lists 7 A/250 VAC for NC; the 15 A headline is not a
+  general DC-contact rating. The camera port uses 2 mm copper on both sides, but
+  that does not qualify the relay. Verify coil pickup under low-supply/hot
+  conditions; the specified maximum pickup threshold is 3.75 V at 23 °C.
+  [Relay manufacturer datasheet](https://datasheet.lcsc.com/datasheet/pdf/3ac744019be974ff562e0a8cea7c80c4.pdf).
 - Check Olimex sockets/standoffs, fuse slots/retention openings, enclosure height
   and tool access with physical samples and fabrication previews.
 - Test startup, power-source transitions, lighting transients, DMX signaling and
@@ -235,6 +250,6 @@ reset relay retains its low-side transistor drive and flyback diode.
 
 The imported baseline is `b2cbc42`; verified schematic fixes and the decision
 to retain the ideal diode were committed as `f0294b7`. The subsequent PCB
-placement preserves all schematic connectivity and sourcing fields, including
-R9's DNP state and the selected JP1 header/shunt. No fabrication output has
-been released.
+placement was committed as `ed387a4`. The routed board preserves its connectivity,
+R9's DNP state and the selected JP1 header/shunt; C8/C9 were changed to 100 nF and
+the purchasing BOM was reconciled. No fabrication output has been released.

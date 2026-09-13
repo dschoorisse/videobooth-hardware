@@ -45,6 +45,13 @@ The verified local `Fuseholder_XFCN_PTF-77_P22.50mm` remains a legacy mechanical
 
 ## Release checks
 
+The ANT time/current table was rechecked on 13 September 2026. It permits
+110% rated current for at least 100 hours, up to 120 seconds at 135%, and up to
+5 seconds at 200%. A 10 A fuse therefore does not make an 8 A current limiter.
+Coordinate supply fault/current-limit behavior, wiring, copper and the selected
+fuse curve; the 8 A design load alone is insufficient to finalize protection.
+[ANT manufacturer data](https://www.optifuse.com/optifuse_ecommerce_tools/datasheets/ANT.pdf).
+
 - Resolve the main and each branch fuse current from steady load, startup/inrush, wire ampacity, PCB copper, and the fuse time/current curve; all four `Fitted Fuse` values remain TBD until then.
 - Confirm holder temperature rise/current derating for the actual enclosure and ambient. An 8 A total load does not itself select a fuse rating.
 - Fit a CNT-06 and selected ANT/APT sample into a board coupon; verify plated slots, retention opening, solder access, seated height, and removal clearance.

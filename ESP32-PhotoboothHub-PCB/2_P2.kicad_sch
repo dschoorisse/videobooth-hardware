@@ -9,6 +9,818 @@
 		(date "2026-09-08")
 	)
 	(lib_symbols
+		(symbol "DMXFixes:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DMXFixes:R_0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic 0603 resistor; part and tolerance specified by instance"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0603_1_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DMXFixes:SN74LVC1G07DBVR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SN74LVC1G07DBVR"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "3.3 V powered non-inverting open-drain buffer; 5.5 V tolerant output and partial-power-down protection"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SN74LVC1G07DBVR_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SN74LVC1G07DBVR_1_1"
+				(pin no_connect line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DMXFixes:THVD1500DR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "THVD1500DR"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1500.pdf"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "5 V 500 kbps half-duplex RS-485 transceiver; pin-compatible SOIC-8 replacement for U4"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "THVD1500DR_0_1"
+				(rectangle
+					(start -6.35 6.35)
+					(end 6.35 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "THVD1500DR_1_1"
+				(pin tri_state line
+					(at -8.89 3.81 0)
+					(length 2.54)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "~{RE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -1.27 0)
+					(length 2.54)
+					(name "DE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -3.81 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 8.89 -1.27 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 8.89 1.27 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 8.89 3.81 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DMXFixes:TMR_1-0511"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TMR_1-0511"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.tracopower.com/tmr1-datasheet"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Regulated isolated 5 V / 200 mA DC/DC converter; 4.5-9 V input; no minimum load"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TMR_1-0511_0_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -7.62) (xy 0 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TMR_1-0511_1_1"
+				(pin power_in line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "-VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "+VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "+VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "-VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ProPrj_New-easyedapro:0603WAF1001T5E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4054,601 +4866,7 @@
 			)
 			(embedded_fonts no)
 		)
-
-(symbol "DMXFixes:THVD1500DR"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "THVD1500DR"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1500.pdf"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "5 V 500 kbps half-duplex RS-485 transceiver; pin-compatible SOIC-8 replacement for U4"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "THVD1500DR_0_1"
-      (rectangle
-        (start -6.35 6.35)
-        (end 6.35 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "THVD1500DR_1_1"
-      (pin tri_state line
-        (at -8.89 3.81 0)
-        (length 2.54)
-        (name "R"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 1.27 0)
-        (length 2.54)
-        (name "~{RE}"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -1.27 0)
-        (length 2.54)
-        (name "DE"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -3.81 0)
-        (length 2.54)
-        (name "D"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 8.89 3.81 180)
-        (length 2.54)
-        (name "VCC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "8"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 8.89 1.27 180)
-        (length 2.54)
-        (name "B"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "7"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 8.89 -1.27 180)
-        (length 2.54)
-        (name "A"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 8.89 -3.81 180)
-        (length 2.54)
-        (name "GND"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
-(symbol "DMXFixes:TMR_1-0511"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "TMR_1-0511"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.tracopower.com/tmr1-datasheet"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "Regulated isolated 5 V / 200 mA DC/DC converter; 4.5-9 V input; no minimum load"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "TMR_1-0511_0_1"
-      (rectangle
-        (start -10.16 7.62)
-        (end 10.16 -7.62)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0 -7.62)
-          (xy 0 7.62)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "TMR_1-0511_1_1"
-      (pin power_in line
-        (at -12.7 -5.08 0)
-        (length 2.54)
-        (name "-VIN"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at -12.7 5.08 0)
-        (length 2.54)
-        (name "+VIN"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_out line
-        (at 12.7 5.08 180)
-        (length 2.54)
-        (name "+VOUT"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_out line
-        (at 12.7 -5.08 180)
-        (length 2.54)
-        (name "-VOUT"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
-(symbol "DMXFixes:SN74LVC1G07DBVR"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "SN74LVC1G07DBVR"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "3.3 V powered non-inverting open-drain buffer; 5.5 V tolerant output and partial-power-down protection"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "SN74LVC1G07DBVR_0_1"
-      (rectangle
-        (start -5.08 5.08)
-        (end 5.08 -5.08)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "SN74LVC1G07DBVR_1_1"
-      (pin no_connect line
-        (at -7.62 2.54 0)
-        (length 2.54)
-        (name "NC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -7.62 0 0)
-        (length 2.54)
-        (name "A"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 -7.62 90)
-        (length 2.54)
-        (name "GND"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin open_collector line
-        (at 7.62 0 180)
-        (length 2.54)
-        (name "Y"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 7.62 270)
-        (length 2.54)
-        (name "VCC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
-(symbol "DMXFixes:C"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0.254)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "C"
-			(at 0.635 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C"
-			(at 0.635 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0.9652 -3.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "cap capacitor"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_fp_filters" "C_*"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "C_0_1"
-			(polyline
-				(pts
-					(xy -2.032 0.762) (xy 2.032 0.762)
-				)
-				(stroke
-					(width 0.508)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.032 -0.762) (xy 2.032 -0.762)
-				)
-				(stroke
-					(width 0.508)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "C_1_1"
-			(pin passive line
-				(at 0 3.81 270)
-				(length 2.794)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -3.81 90)
-				(length 2.794)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
 	)
-(symbol "DMXFixes:R_0603"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic 0603 resistor; part and tolerance specified by instance"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-
-
-
-
-
-			(symbol "R_0603_1_0"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.0254 0.0254)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-)
 	(rectangle
 		(start 29.21 38.1)
 		(end 157.48 113.03)
@@ -4684,6 +4902,17 @@
 		)
 		(uuid "29eb28b4-f075-4614-88ce-7db0589a1064")
 	)
+	(text "Primary +5V: 4.75-5.25 V. Keep GND isolated from DMX-GND.\nPlace C10/C11 at U7/U4; C12/C18 at U3 output."
+		(exclude_from_sim no)
+		(at 190.5 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5fa64752-7fe9-4720-bd70-99dd8b89ad25")
+	)
 	(text "Only place if at\nend of DMX chain"
 		(exclude_from_sim no)
 		(at 233.68 149.86 0)
@@ -4694,6 +4923,17 @@
 			(justify left top)
 		)
 		(uuid "7a5330ae-d69a-46ee-be3c-817bc2650099")
+	)
+	(text "Regulated 5 V / 200 mA isolated supply"
+		(exclude_from_sim no)
+		(at 190.5 21.59 0)
+		(effects
+			(font
+				(size 1.5748 1.5748)
+			)
+			(justify left top)
+		)
+		(uuid "870778b1-bed9-435f-8aa0-1159f320fd19")
 	)
 	(text "Camera powered by external DIN rail converter."
 		(exclude_from_sim no)
@@ -4706,7 +4946,17 @@
 		)
 		(uuid "d04ab308-807d-4cde-9a8b-6342e7bdafaa")
 	)
-
+	(text "3.3 V open-drain buffer drives 5 V optocoupler LED.\nR26 = 360R 1%: 7.01-14.73 mA worst-case;\n3.3 V supply >= 3.0 V. Place C17 at U11."
+		(exclude_from_sim no)
+		(at 120.65 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f8a2467b-eba7-45d1-8d31-338e4ec6228b")
+	)
 	(junction
 		(at 223.52 114.3)
 		(diameter 0)
@@ -4720,17 +4970,28 @@
 		(uuid "08fbea55-c2fd-47c1-8b6d-2d4625228ab9")
 	)
 	(junction
+		(at 120.65 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b42762d-552b-48b8-8279-306a36769d1e")
+	)
+	(junction
 		(at 68.58 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2146cbff-b484-4fad-ad1a-65b2ed503d52")
 	)
-
 	(junction
 		(at 68.58 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28f4413e-c5d4-4966-b842-6bf0c5c1f68a")
+	)
+	(junction
+		(at 269.24 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29f685e2-6c1b-4918-9036-3d555d1aa43b")
 	)
 	(junction
 		(at 262.89 120.65)
@@ -4739,27 +5000,65 @@
 		(uuid "2cb6c161-ff52-4df1-a389-ac0fa45c9949")
 	)
 	(junction
+		(at 248.92 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "391a83e4-346a-4519-9740-7b078a97b1b2")
+	)
+	(junction
+		(at 248.92 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39d0b909-8cba-4b5f-82bf-e1310ddb0082")
+	)
+	(junction
 		(at 55.88 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e5ab693-14a2-4cd0-9b57-fe800cb09e7a")
 	)
-
-
+	(junction
+		(at 190.5 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fd609fa-9e26-4393-9345-2a07f46acb43")
+	)
+	(junction
+		(at 241.3 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50a92533-2986-4fba-8c3f-73b9bf82618b")
+	)
 	(junction
 		(at 262.89 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "691ea4be-a11d-4233-af64-f3b761242dbb")
 	)
-
 	(junction
 		(at 262.89 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92750c81-10a7-4560-837e-15afbdb847e7")
 	)
-
+	(junction
+		(at 269.24 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a973df0f-b8cd-43c9-add4-70245650a2f4")
+	)
+	(junction
+		(at 241.3 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf05a3a5-47ec-44a6-b6ea-e98328c4fe9e")
+	)
+	(junction
+		(at 190.5 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf218771-80c2-486a-841a-89a7ead7389a")
+	)
 	(junction
 		(at 201.93 121.92)
 		(diameter 0)
@@ -4772,9 +5071,18 @@
 		(color 0 0 0 0)
 		(uuid "c7ed9543-a564-4602-a18d-ae1ccb5f8506")
 	)
-
-
-
+	(junction
+		(at 234.95 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce7a9c39-0edb-4b08-a958-716d1b2503f4")
+	)
+	(junction
+		(at 234.95 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1de5e85-8ee9-42de-a166-d4006e0569f9")
+	)
 	(junction
 		(at 68.58 71.12)
 		(diameter 0)
@@ -4787,7 +5095,6 @@
 		(color 0 0 0 0)
 		(uuid "ed1f09bc-6d4c-474a-97a6-090a8177013d")
 	)
-
 	(no_connect
 		(at 170.18 137.16)
 		(uuid "08165c80-57cb-4724-8436-e5005ab67967")
@@ -4796,7 +5103,18 @@
 		(at 170.18 121.92)
 		(uuid "263e335f-4530-41cb-9026-f28743b838e5")
 	)
-
+	(no_connect
+		(at 224.79 111.76)
+		(uuid "64384726-bb99-4b49-98a4-364de91e58b9")
+	)
+	(no_connect
+		(at 133.35 129.54)
+		(uuid "900466aa-383f-41b6-980b-094a42044065")
+	)
+	(no_connect
+		(at 92.71 71.12)
+		(uuid "964cedab-f3e4-4aeb-8eb1-a20ac0fab556")
+	)
 	(wire
 		(pts
 			(xy 220.98 121.92) (xy 220.98 119.38)
@@ -4806,6 +5124,16 @@
 			(type default)
 		)
 		(uuid "00fff399-83b1-457e-a54c-1c49c5e9e564")
+	)
+	(wire
+		(pts
+			(xy 190.5 45.72) (xy 190.5 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01424f97-1be9-4c02-ab2f-fd085e766026")
 	)
 	(wire
 		(pts
@@ -4827,7 +5155,6 @@
 		)
 		(uuid "01898492-5da6-42c3-8ae5-e41b57e2d7c4")
 	)
-
 	(wire
 		(pts
 			(xy 170.18 127) (xy 161.29 127)
@@ -4840,6 +5167,26 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 119.38) (xy 120.65 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bc40de8-58de-42f5-ba65-a39ef6970ea4")
+	)
+	(wire
+		(pts
+			(xy 190.5 45.72) (xy 203.2 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d58833f-b487-456b-9146-f5bcc24ea3d8")
+	)
+	(wire
+		(pts
 			(xy 50.8 74.93) (xy 68.58 74.93)
 		)
 		(stroke
@@ -4848,7 +5195,26 @@
 		)
 		(uuid "17139e19-1f61-4e46-b9e6-015220b75263")
 	)
-
+	(wire
+		(pts
+			(xy 148.59 132.08) (xy 154.94 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aca80ff-9b46-4482-b33d-dd266915afd1")
+	)
+	(wire
+		(pts
+			(xy 234.95 35.56) (xy 241.3 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ae293bc-90b6-4856-bfe0-0c0009b7edb4")
+	)
 	(wire
 		(pts
 			(xy 219.71 114.3) (xy 219.71 110.49)
@@ -4859,7 +5225,16 @@
 		)
 		(uuid "1b26831d-fca7-4b09-8747-619b0cd83c2e")
 	)
-
+	(wire
+		(pts
+			(xy 248.92 45.72) (xy 269.24 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c030231-690e-430b-9225-f9ab5e35a205")
+	)
 	(wire
 		(pts
 			(xy 68.58 76.2) (xy 68.58 74.93)
@@ -4870,7 +5245,6 @@
 		)
 		(uuid "1f3a5349-2d2a-40b1-828b-d951f661f7c8")
 	)
-
 	(wire
 		(pts
 			(xy 219.71 110.49) (xy 215.9 110.49)
@@ -4913,6 +5287,26 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 35.56) (xy 269.24 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31d7d1e3-ee92-4fc5-a0f2-db5702d7e21d")
+	)
+	(wire
+		(pts
+			(xy 241.3 35.56) (xy 248.92 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32940f47-fa1d-48dd-9ad5-686922e9603e")
+	)
+	(wire
+		(pts
 			(xy 133.35 64.77) (xy 133.35 63.5)
 		)
 		(stroke
@@ -4920,6 +5314,16 @@
 			(type default)
 		)
 		(uuid "3338c740-70b6-454b-b8fa-e0d77637a455")
+	)
+	(wire
+		(pts
+			(xy 190.5 35.56) (xy 190.5 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39c502bf-02db-4bee-b595-47d8ecfd44d4")
 	)
 	(wire
 		(pts
@@ -4981,7 +5385,6 @@
 		)
 		(uuid "49a25c60-6088-4777-8ae0-e88184a38557")
 	)
-
 	(wire
 		(pts
 			(xy 290.83 118.11) (xy 290.83 109.22)
@@ -5024,6 +5427,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 132.08) (xy 133.35 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54a79183-34cf-49fb-b606-870764e94d91")
+	)
+	(wire
+		(pts
 			(xy 74.93 60.96) (xy 68.58 60.96)
 		)
 		(stroke
@@ -5032,7 +5445,6 @@
 		)
 		(uuid "56db0530-5e15-43fe-ade7-d30a3bc9de5f")
 	)
-
 	(wire
 		(pts
 			(xy 200.66 132.08) (xy 220.98 132.08)
@@ -5055,6 +5467,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 132.08) (xy 120.65 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c0f286b-01d2-475b-a3f2-18540f448e42")
+	)
+	(wire
+		(pts
 			(xy 223.52 114.3) (xy 223.52 116.84)
 		)
 		(stroke
@@ -5063,8 +5485,6 @@
 		)
 		(uuid "5c88288b-7c1d-4202-91ca-43d83e398ab6")
 	)
-
-
 	(wire
 		(pts
 			(xy 242.57 114.3) (xy 246.38 114.3)
@@ -5087,6 +5507,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 45.72) (xy 241.3 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "659d9c3f-92aa-44c8-af77-013ecb712eba")
+	)
+	(wire
+		(pts
 			(xy 201.93 121.92) (xy 201.93 116.84)
 		)
 		(stroke
@@ -5105,7 +5535,16 @@
 		)
 		(uuid "67b73a93-aab6-4e98-ae85-032061914ae0")
 	)
-
+	(wire
+		(pts
+			(xy 200.66 127) (xy 205.74 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6da288a5-4e7a-421b-b65e-0f8cd372bdc4")
+	)
 	(wire
 		(pts
 			(xy 220.98 121.92) (xy 220.98 132.08)
@@ -5126,8 +5565,26 @@
 		)
 		(uuid "7056bd52-ce09-4781-a939-f51d02782d20")
 	)
-
-
+	(wire
+		(pts
+			(xy 140.97 124.46) (xy 140.97 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75ce2c1d-ccc2-415c-b4b2-99b031805455")
+	)
+	(wire
+		(pts
+			(xy 228.6 35.56) (xy 234.95 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77691d16-5daa-4abb-b115-41ae70631ad0")
+	)
 	(wire
 		(pts
 			(xy 50.8 63.5) (xy 50.8 64.77)
@@ -5158,7 +5615,6 @@
 		)
 		(uuid "870a0296-daa0-43ed-9c2a-112fa06dc353")
 	)
-
 	(wire
 		(pts
 			(xy 74.93 73.66) (xy 74.93 71.12)
@@ -5169,8 +5625,16 @@
 		)
 		(uuid "89d4fdda-fcc2-4f6c-83ef-90736cf098e7")
 	)
-
-
+	(wire
+		(pts
+			(xy 228.6 45.72) (xy 234.95 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e469933-e074-4625-a029-5aec87bbf13b")
+	)
 	(wire
 		(pts
 			(xy 64.77 60.96) (xy 68.58 60.96)
@@ -5181,9 +5645,16 @@
 		)
 		(uuid "8e704b27-3151-463f-9baa-1df247938935")
 	)
-
-
-
+	(wire
+		(pts
+			(xy 120.65 129.54) (xy 120.65 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "932362d2-a1e4-4282-b9cd-de69ba8fd64b")
+	)
 	(wire
 		(pts
 			(xy 290.83 109.22) (xy 262.89 109.22)
@@ -5206,6 +5677,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 45.72) (xy 248.92 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99f2d480-97b8-497f-a341-f0ef65660332")
+	)
+	(wire
+		(pts
 			(xy 200.66 121.92) (xy 201.93 121.92)
 		)
 		(stroke
@@ -5224,7 +5705,6 @@
 		)
 		(uuid "9e1890ad-302b-46a9-aa8e-2302a0697e16")
 	)
-
 	(wire
 		(pts
 			(xy 245.11 111.76) (xy 242.57 111.76)
@@ -5245,7 +5725,26 @@
 		)
 		(uuid "9f5888c3-a3b7-4fe8-a7fd-8bdcdec6272a")
 	)
-
+	(wire
+		(pts
+			(xy 248.92 35.56) (xy 269.24 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a023b251-1801-4589-b3c4-1a8826cfa2a0")
+	)
+	(wire
+		(pts
+			(xy 115.57 146.05) (xy 115.57 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2f32286-54aa-4d91-9fc8-7be6681129f0")
+	)
 	(wire
 		(pts
 			(xy 262.89 138.43) (xy 262.89 142.24)
@@ -5255,6 +5754,16 @@
 			(type default)
 		)
 		(uuid "a6405c68-2e44-4002-b4f6-27dc3822b2c4")
+	)
+	(wire
+		(pts
+			(xy 269.24 44.45) (xy 269.24 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8254f47-3f6f-4c5b-9938-b4fdef2e30cf")
 	)
 	(wire
 		(pts
@@ -5278,6 +5787,26 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 45.72) (xy 297.18 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aabc3d42-11f7-4013-859b-22a8c5618dea")
+	)
+	(wire
+		(pts
+			(xy 190.5 29.21) (xy 190.5 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac187eb2-2219-48db-afb6-3ecf160b6bd6")
+	)
+	(wire
+		(pts
 			(xy 294.64 123.19) (xy 293.37 123.19)
 		)
 		(stroke
@@ -5286,7 +5815,6 @@
 		)
 		(uuid "aedb0539-d777-458f-8d5b-44a48d669d7e")
 	)
-
 	(wire
 		(pts
 			(xy 293.37 130.81) (xy 293.37 123.19)
@@ -5317,7 +5845,6 @@
 		)
 		(uuid "b77d49ff-8ba6-43f8-9c98-0cd70903e157")
 	)
-
 	(wire
 		(pts
 			(xy 262.89 120.65) (xy 246.38 120.65)
@@ -5358,9 +5885,16 @@
 		)
 		(uuid "c021bd0b-44d6-49cf-994b-11a380be54cd")
 	)
-
-
-
+	(wire
+		(pts
+			(xy 269.24 35.56) (xy 297.18 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c024e610-65ee-4b4c-907f-2753d219c8d1")
+	)
 	(wire
 		(pts
 			(xy 68.58 95.25) (xy 68.58 86.36)
@@ -5391,7 +5925,26 @@
 		)
 		(uuid "cfc94339-a606-4edf-a554-f4e29fca1b89")
 	)
-
+	(wire
+		(pts
+			(xy 140.97 139.7) (xy 140.97 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d43c63ce-5688-4ce2-b43c-d815572d1400")
+	)
+	(wire
+		(pts
+			(xy 190.5 44.45) (xy 190.5 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc31bbab-863d-4948-858f-134aad71658e")
+	)
 	(wire
 		(pts
 			(xy 224.79 119.38) (xy 220.98 119.38)
@@ -5402,8 +5955,6 @@
 		)
 		(uuid "dcbfb07f-f6b4-4d3b-b299-4d4d56299bd6")
 	)
-
-
 	(wire
 		(pts
 			(xy 294.64 118.11) (xy 290.83 118.11)
@@ -5414,8 +5965,6 @@
 		)
 		(uuid "e47573b4-c48f-4dd3-93c3-b5f4f78fb789")
 	)
-
-
 	(wire
 		(pts
 			(xy 55.88 81.28) (xy 55.88 85.09)
@@ -5428,6 +5977,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 35.56) (xy 203.2 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4ede5ca-69eb-4a34-b61b-8e7b11e0ec9d")
+	)
+	(wire
+		(pts
 			(xy 54.61 81.28) (xy 55.88 81.28)
 		)
 		(stroke
@@ -5436,9 +5995,26 @@
 		)
 		(uuid "f4fec5da-d753-4696-ae34-886a507c766a")
 	)
-
-
-
+	(wire
+		(pts
+			(xy 115.57 153.67) (xy 115.57 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5492b5f-e192-4670-b615-0895f3b12133")
+	)
+	(wire
+		(pts
+			(xy 165.1 132.08) (xy 170.18 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f73c156d-e53d-40c5-928d-923b9e1013af")
+	)
 	(wire
 		(pts
 			(xy 50.8 49.53) (xy 50.8 53.34)
@@ -5523,8 +6099,94 @@
 			)
 		)
 	)
-
-
+	(global_label "DMX-GND"
+		(shape passive)
+		(at 297.18 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03babc6f-591c-4bd5-bbf1-8700c75b9edc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 297.18 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape passive)
+		(at 190.5 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1730f02f-897a-4c93-bca0-ab52af9e82b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "3.3V"
+		(shape passive)
+		(at 140.97 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b2d969f-3c9c-487c-be57-ab51951ec56f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 140.97 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "DMX-VCC"
+		(shape passive)
+		(at 297.18 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2112a8d6-eb9a-4c3c-ad9d-5c13bbf87d0e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 297.18 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "DMX-VCC"
 		(shape output)
 		(at 215.9 110.49 180)
@@ -5547,7 +6209,28 @@
 			)
 		)
 	)
-
+	(global_label "GND"
+		(shape passive)
+		(at 190.5 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "420126fa-58b9-499d-8cfe-fc6566f89836")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "DMX-VCC"
 		(shape output)
 		(at 201.93 116.84 180)
@@ -5582,6 +6265,28 @@
 		(uuid "507b8b51-6c4d-4ab6-af2a-7aab91a59879")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 205.74 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 140.97 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a48b382-ec87-4f4b-907b-74932d87d837")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 140.97 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5636,7 +6341,94 @@
 			)
 		)
 	)
-
+	(global_label "DMX-VCC"
+		(shape passive)
+		(at 205.74 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8805167d-2ed7-4ee2-9ada-ddff555b4ecc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "3.3V"
+		(shape passive)
+		(at 115.57 143.51 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e21e815-f41d-453e-ad33-73b3dc717676")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.57 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 115.57 156.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b65a49ec-af2e-48f0-a0ae-140abd8e2653")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.57 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "3.3V"
+		(shape passive)
+		(at 120.65 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bd50cf6a-a793-4b73-8dff-8f6c528ecea8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 120.65 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "DMX-GND"
 		(shape output)
 		(at 262.89 142.24 0)
@@ -5649,6 +6441,28 @@
 		(uuid "bf9e8f28-dc62-44eb-b9ca-9852e4c8e115")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 262.89 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "485/TX"
+		(shape passive)
+		(at 113.03 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c7a8dff9-4d35-4d83-8cd6-e21018477076")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.03 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5703,21 +6517,250 @@
 			)
 		)
 	)
-	(symbol (lib_id "DMXFixes:R_0603") (at 160.02 132.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "0e33319a-8942-4321-8ada-043f214057c4")
-(property "Reference" "R26" (at 160.02 135.89 0) (effects (font (size 1.27 1.27))))
-(property "Value" "360R 1%" (at 160.02 138.43 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://jlcpcb.com/partdetail/C25194" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "360 ohm 1%, 0.1W 0603" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Tolerance" "1%" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "8d4b8804-f222-4b16-b178-fc2b702daa98"))
-(pin "2" (uuid "5d8c18d5-17cd-41b4-a5bb-093f38f9fe20"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b" (reference "R26") (unit 1))))
-		(property "Manufacturer" "UNI-ROYAL" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Manufacturer Part" "0603WAF3600T5E" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier" "LCSC" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier Part" "C25194" (at 160.02 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	(symbol
+		(lib_id "DMXFixes:SN74LVC1G07DBVR")
+		(at 140.97 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "08e4a6dc-268d-4fcb-bc40-b0eafb436268")
+		(property "Reference" "U11"
+			(at 140.97 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G07DBVR"
+			(at 140.97 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 140.97 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+			(at 140.97 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3.3 V powered non-inverting open-drain buffer; 5.5 V tolerant output and partial-power-down protection"
+			(at 140.97 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 140.97 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "SN74LVC1G07DBVR"
+			(at 140.97 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f72fb9a5-b0b3-47f2-bde9-240469a8479d")
+		)
+		(pin "2"
+			(uuid "0d8ebd95-5c5f-44af-bf94-67becbbded6a")
+		)
+		(pin "3"
+			(uuid "364f7f2d-8c7b-4fe3-bf65-89717cb200ea")
+		)
+		(pin "4"
+			(uuid "db1f90f2-e60f-4a70-ad0b-a43978e2a8a5")
+		)
+		(pin "5"
+			(uuid "3cf10415-2f8e-483f-b1ce-f00318c80b74")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DMXFixes:R_0603")
+		(at 160.02 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e33319a-8942-4321-8ada-043f214057c4")
+		(property "Reference" "R26"
+			(at 160.02 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "360R 1%"
+			(at 160.02 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C25194"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "360 ohm 1%, 0.1W 0603"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF3600T5E"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C25194"
+			(at 160.02 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d4b8804-f222-4b16-b178-fc2b702daa98")
+		)
+		(pin "2"
+			(uuid "5d8c18d5-17cd-41b4-a5bb-093f38f9fe20")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:0603WAF1001T5E")
 		(at 49.53 81.28 0)
@@ -6557,21 +7600,135 @@
 			)
 		)
 	)
-	(symbol (lib_id "DMXFixes:TMR_1-0511") (at 215.9 40.64 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "43dc9345-8c9e-4923-a8cf-6013d2bdd4c1")
-(property "Reference" "U3" (at 215.9 26.67 0) (effects (font (size 1.27 1.27))))
-(property "Value" "TMR 1-0511" (at 215.9 30.48 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT" (at 215.9 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://www.tracopower.com/tmr1-datasheet" (at 215.9 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "Regulated isolated 5 V / 200 mA DC/DC converter; 4.5-9 V input; no minimum load" (at 215.9 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer" "TRACO POWER" (at 215.9 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer Part" "TMR 1-0511" (at 215.9 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Supplier" "LCSC" (at 215.9 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Supplier Part" "C7362907" (at 215.9 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "315f33c9-1385-4ca9-83d3-d8da92e097d1"))
-(pin "2" (uuid "6d1b41e0-0842-4d15-b84c-a1c154f9e0fd"))
-(pin "4" (uuid "c641689f-212e-4ccb-b5c0-2100c8026bd1"))
-(pin "6" (uuid "d2d2b676-8781-47f8-9bfb-1dd863081757"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b" (reference "U3") (unit 1)))))
+	(symbol
+		(lib_id "DMXFixes:TMR_1-0511")
+		(at 215.9 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43dc9345-8c9e-4923-a8cf-6013d2bdd4c1")
+		(property "Reference" "U3"
+			(at 215.9 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR 1-0511"
+			(at 215.9 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TMR-1-xxxx_Single_THT"
+			(at 215.9 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/tmr1-datasheet"
+			(at 215.9 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Regulated isolated 5 V / 200 mA DC/DC converter; 4.5-9 V input; no minimum load"
+			(at 215.9 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TRACO POWER"
+			(at 215.9 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TMR 1-0511"
+			(at 215.9 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 215.9 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C7362907"
+			(at 215.9 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "315f33c9-1385-4ca9-83d3-d8da92e097d1")
+		)
+		(pin "2"
+			(uuid "6d1b41e0-0842-4d15-b84c-a1c154f9e0fd")
+		)
+		(pin "4"
+			(uuid "c641689f-212e-4ccb-b5c0-2100c8026bd1")
+		)
+		(pin "6"
+			(uuid "d2d2b676-8781-47f8-9bfb-1dd863081757")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:FRC0603J121 TS")
 		(at 262.89 115.57 90)
@@ -6847,6 +8004,151 @@
 		)
 	)
 	(symbol
+		(lib_id "DMXFixes:C")
+		(at 269.24 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6614d79d-f7bf-426c-943d-03d60000a9e4")
+		(property "Reference" "C18"
+			(at 278.13 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF / 25V"
+			(at 281.94 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C15850"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10uF 25V X5R 10%, 0805"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "25 V"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C15850"
+			(at 269.24 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b41c35b1-794b-443e-a70e-b9f84a53883a")
+		)
+		(pin "2"
+			(uuid "5ed04c48-0e18-42a6-83d3-e836ec6bc275")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ProPrj_New-easyedapro:CL10B104KB8NNNC")
 		(at 241.3 40.64 90)
 		(unit 1)
@@ -6861,13 +8163,21 @@
 			(at 241.3 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Value" "100nF"
 			(at 241.3 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 241.3 40.64 0)
@@ -7231,6 +8541,39 @@
 				)
 			)
 		)
+		(property "Model" "SPT 1,5/3-V-3,5"
+			(at 299.72 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "CON_DMX1"
+			(at 299.72 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "DMX output"
+			(at 299.72 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f0cdf7f6-73ae-4f54-a42c-f6e4e29c83a3")
 		)
@@ -7248,11 +8591,152 @@
 				)
 			)
 		)
-
-(property "Model" "SPT 1,5/3-V-3,5" (at 299.72 120.65 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "CON_DMX1" (at 299.72 120.65 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "DMX output" (at 299.72 120.65 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
+	)
+	(symbol
+		(lib_id "DMXFixes:C")
+		(at 115.57 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a46a95d4-03db-42d8-945a-cef7e9bc0f9a")
+		(property "Reference" "C17"
+			(at 124.46 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF / 50V"
+			(at 127 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C14663"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF 50V X7R 10%, 0603"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50 V"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CC0603KRX7R9BB104"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C14663"
+			(at 115.57 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a9f14e5-c055-4a89-a120-935807896855")
+		)
+		(pin "2"
+			(uuid "3872d86c-a9c8-41bc-8108-22c665caf954")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:CL10B104KB8NNNC")
 		(at 234.95 40.64 90)
@@ -7268,13 +8752,21 @@
 			(at 234.95 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Value" "100nF"
 			(at 234.95 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 234.95 40.64 0)
@@ -7501,6 +8993,39 @@
 				)
 			)
 		)
+		(property "Model" "SPT 1,5/2-V-3,5"
+			(at 139.7 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "P1"
+			(at 139.7 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Camera power relay"
+			(at 139.7 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6ce8cc1e-9407-4bde-9061-4cd3bb429d43")
 		)
@@ -7515,28 +9040,126 @@
 				)
 			)
 		)
-
-(property "Model" "SPT 1,5/2-V-3,5" (at 139.7 62.23 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "P1" (at 139.7 62.23 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Camera power relay" (at 139.7 62.23 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
-	(symbol (lib_id "DMXFixes:THVD1500DR") (at 233.68 115.57 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "be0b135a-1181-4e20-aaab-b95278c9a339")
-(property "Reference" "U4" (at 233.68 106.68 0) (effects (font (size 1.27 1.27))))
-(property "Value" "THVD1500DR" (at 234.95 127 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 233.68 115.57 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1500.pdf" (at 233.68 115.57 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "5 V 500 kbps half-duplex RS-485 transceiver; pin-compatible SOIC-8 replacement for U4" (at 233.68 115.57 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer" "Texas Instruments" (at 233.68 115.57 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer Part" "THVD1500DR" (at 233.68 115.57 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "5c812e3e-1422-4350-bdce-ac52859c2005"))
-(pin "2" (uuid "4c728559-8cc0-49c8-ace4-3522bf6b1741"))
-(pin "3" (uuid "fbb9db13-a1af-4ab5-8369-779cb087abe7"))
-(pin "4" (uuid "119ceca9-d003-46e5-b628-55ed57df6f77"))
-(pin "8" (uuid "e3a2f80d-901f-4a2e-8a2b-a2f79e0c3e4e"))
-(pin "7" (uuid "8a73839e-3529-4ea5-83f1-e3cefc4c7327"))
-(pin "6" (uuid "65a8db92-6eb8-4663-852f-68946a39e348"))
-(pin "5" (uuid "98189eb2-9494-4e7c-997c-05ebfe7b4b3b"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b" (reference "U4") (unit 1)))))
+	)
+	(symbol
+		(lib_id "DMXFixes:THVD1500DR")
+		(at 233.68 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be0b135a-1181-4e20-aaab-b95278c9a339")
+		(property "Reference" "U4"
+			(at 233.68 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "THVD1500DR"
+			(at 234.95 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 233.68 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1500.pdf"
+			(at 233.68 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5 V 500 kbps half-duplex RS-485 transceiver; pin-compatible SOIC-8 replacement for U4"
+			(at 233.68 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 233.68 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "THVD1500DR"
+			(at 233.68 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c812e3e-1422-4350-bdce-ac52859c2005")
+		)
+		(pin "2"
+			(uuid "4c728559-8cc0-49c8-ace4-3522bf6b1741")
+		)
+		(pin "3"
+			(uuid "fbb9db13-a1af-4ab5-8369-779cb087abe7")
+		)
+		(pin "4"
+			(uuid "119ceca9-d003-46e5-b628-55ed57df6f77")
+		)
+		(pin "8"
+			(uuid "e3a2f80d-901f-4a2e-8a2b-a2f79e0c3e4e")
+		)
+		(pin "7"
+			(uuid "8a73839e-3529-4ea5-83f1-e3cefc4c7327")
+		)
+		(pin "6"
+			(uuid "65a8db92-6eb8-4663-852f-68946a39e348")
+		)
+		(pin "5"
+			(uuid "98189eb2-9494-4e7c-997c-05ebfe7b4b3b")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:FC-2012HRK-620D")
 		(at 50.8 69.85 270)
@@ -7659,6 +9282,39 @@
 				)
 			)
 		)
+		(property "Model" "NCD0805R1"
+			(at 50.8 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Previous Reference" "CAMERA_RESET_LED1"
+			(at 50.8 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "Camera relay indicator"
+			(at 50.8 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f862fb27-3745-42be-9ab0-72650249f367")
 		)
@@ -7673,12 +9329,7 @@
 				)
 			)
 		)
-
-(property "Model" "NCD0805R1" (at 50.8 69.85 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Previous Reference" "CAMERA_RESET_LED1" (at 50.8 69.85 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Function" "Camera relay indicator" (at 50.8 69.85 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
-
+	)
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:RC0603FR-07680RL")
 		(at 262.89 102.87 90)
@@ -7894,6 +9545,140 @@
 		)
 	)
 	(symbol
+		(lib_id "DMXFixes:R_0603")
+		(at 120.65 124.46 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cda666c8-d976-41ce-ba90-424b62bd0d6a")
+		(property "Reference" "R28"
+			(at 127 121.92 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 128.27 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C25804"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10k ohm 1%, 0.1W 0603"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C25804"
+			(at 120.65 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a873aec-325f-40e5-bb37-39bc6259fbd3")
+		)
+		(pin "2"
+			(uuid "4d7ce9b1-91f2-4988-9cfd-707fe51c043e")
+		)
+		(instances
+			(project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08"
+				(path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ProPrj_New-easyedapro:Power-5V")
 		(at 161.29 123.19 0)
 		(unit 1)
@@ -7970,7 +9755,6 @@
 			)
 		)
 	)
-
 	(symbol
 		(lib_id "ProPrj_New-easyedapro:CL10B104KB8NNNC")
 		(at 248.92 40.64 90)
@@ -7986,13 +9770,21 @@
 			(at 248.92 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Value" "100nF"
 			(at 248.92 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 248.92 40.64 0)
@@ -8113,13 +9905,21 @@
 			(at 190.5 31.75 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Value" "4.7uF"
 			(at 190.5 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
-			(effects (font (size 1.27 1.27)))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 190.5 40.64 0)
@@ -8448,123 +10248,4 @@
 			)
 		)
 	)
-
-(symbol (lib_id "DMXFixes:SN74LVC1G07DBVR") (at 140.97 132.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "08e4a6dc-268d-4fcb-bc40-b0eafb436268")
-(property "Reference" "U11" (at 140.97 119.38 0) (effects (font (size 1.27 1.27))))
-(property "Value" "SN74LVC1G07DBVR" (at 140.97 146.05 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 140.97 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf" (at 140.97 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "3.3 V powered non-inverting open-drain buffer; 5.5 V tolerant output and partial-power-down protection" (at 140.97 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer" "Texas Instruments" (at 140.97 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Manufacturer Part" "SN74LVC1G07DBVR" (at 140.97 132.08 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "f72fb9a5-b0b3-47f2-bde9-240469a8479d"))
-(pin "2" (uuid "0d8ebd95-5c5f-44af-bf94-67becbbded6a"))
-(pin "3" (uuid "364f7f2d-8c7b-4fe3-bf65-89717cb200ea"))
-(pin "4" (uuid "db1f90f2-e60f-4a70-ad0b-a43978e2a8a5"))
-(pin "5" (uuid "3cf10415-2f8e-483f-b1ce-f00318c80b74"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b" (reference "U11") (unit 1)))))
-(symbol (lib_id "DMXFixes:R_0603") (at 120.65 124.46 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "cda666c8-d976-41ce-ba90-424b62bd0d6a")
-(property "Reference" "R28" (at 127 121.92 90) (effects (font (size 1.27 1.27))))
-(property "Value" "10k 1%" (at 128.27 125.73 90) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://jlcpcb.com/partdetail/C25804" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "10k ohm 1%, 0.1W 0603" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Tolerance" "1%" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "6a873aec-325f-40e5-bb37-39bc6259fbd3"))
-(pin "2" (uuid "4d7ce9b1-91f2-4988-9cfd-707fe51c043e"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b" (reference "R28") (unit 1))))
-		(property "Manufacturer" "UNI-ROYAL" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Manufacturer Part" "0603WAF1002T5E" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier" "LCSC" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier Part" "C25804" (at 120.65 124.46 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
-(symbol (lib_id "DMXFixes:C") (at 115.57 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "a46a95d4-03db-42d8-945a-cef7e9bc0f9a")
-(property "Reference" "C17" (at 124.46 148.59 0) (effects (font (size 1.27 1.27))))
-(property "Value" "100nF / 50V" (at 127 151.13 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://jlcpcb.com/partdetail/C14663" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "100nF 50V X7R 10%, 0603" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Voltage Rating" "50 V" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Dielectric" "X7R" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "7a9f14e5-c055-4a89-a120-935807896855"))
-(pin "2" (uuid "3872d86c-a9c8-41bc-8108-22c665caf954"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b" (reference "C17") (unit 1))))
-		(property "Manufacturer" "Yageo" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Manufacturer Part" "CC0603KRX7R9BB104" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier" "LCSC" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier Part" "C14663" (at 115.57 149.86 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
-(symbol (lib_id "DMXFixes:C") (at 269.24 40.64 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "6614d79d-f7bf-426c-943d-03d60000a9e4")
-(property "Reference" "C18" (at 278.13 39.37 0) (effects (font (size 1.27 1.27))))
-(property "Value" "10uF / 25V" (at 281.94 41.91 0) (effects (font (size 1.27 1.27))))
-(property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Datasheet" "https://jlcpcb.com/partdetail/C15850" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Description" "10uF 25V X5R 10%, 0805" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Voltage Rating" "25 V" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(property "Dielectric" "X5R" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-(pin "1" (uuid "b41c35b1-794b-443e-a70e-b9f84a53883a"))
-(pin "2" (uuid "5ed04c48-0e18-42a6-83d3-e836ec6bc275"))
-(instances (project "ProPrj_New Project_2025-09-22_16-04-54_2026-09-08" (path "/1a06e780-7284-4b2d-8d1d-452e4ee14a37/32384adc-3785-4c3c-b068-de881dc2670b" (reference "C18") (unit 1))))
-		(property "Manufacturer" "Samsung" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Manufacturer Part" "CL21A106KAYNNNE" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier" "LCSC" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-		(property "Supplier Part" "C15850" (at 269.24 40.64 0) (hide yes) (effects (font (size 1.27 1.27))))
-)
-(wire (pts (xy 190.5 29.21) (xy 190.5 35.56)) (stroke (width 0) (type default)) (uuid "ac187eb2-2219-48db-afb6-3ecf160b6bd6"))
-(wire (pts (xy 190.5 35.56) (xy 190.5 36.83)) (stroke (width 0) (type default)) (uuid "39c502bf-02db-4bee-b595-47d8ecfd44d4"))
-(global_label "+5V" (shape passive) (at 190.5 29.21 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "1730f02f-897a-4c93-bca0-ab52af9e82b7"))
-(wire (pts (xy 190.5 35.56) (xy 203.2 35.56)) (stroke (width 0) (type default)) (uuid "f4ede5ca-69eb-4a34-b61b-8e7b11e0ec9d"))
-(junction (at 190.5 35.56) (diameter 0) (color 0 0 0 0) (uuid "3fd609fa-9e26-4393-9345-2a07f46acb43"))
-(wire (pts (xy 190.5 44.45) (xy 190.5 45.72)) (stroke (width 0) (type default)) (uuid "dc31bbab-863d-4948-858f-134aad71658e"))
-(wire (pts (xy 190.5 45.72) (xy 190.5 50.8)) (stroke (width 0) (type default)) (uuid "01424f97-1be9-4c02-ab2f-fd085e766026"))
-(global_label "GND" (shape passive) (at 190.5 50.8 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "420126fa-58b9-499d-8cfe-fc6566f89836"))
-(wire (pts (xy 190.5 45.72) (xy 203.2 45.72)) (stroke (width 0) (type default)) (uuid "0d58833f-b487-456b-9146-f5bcc24ea3d8"))
-(junction (at 190.5 45.72) (diameter 0) (color 0 0 0 0) (uuid "bf218771-80c2-486a-841a-89a7ead7389a"))
-(wire (pts (xy 228.6 35.56) (xy 234.95 35.56)) (stroke (width 0) (type default)) (uuid "77691d16-5daa-4abb-b115-41ae70631ad0"))
-(wire (pts (xy 234.95 35.56) (xy 241.3 35.56)) (stroke (width 0) (type default)) (uuid "1ae293bc-90b6-4856-bfe0-0c0009b7edb4"))
-(wire (pts (xy 241.3 35.56) (xy 248.92 35.56)) (stroke (width 0) (type default)) (uuid "32940f47-fa1d-48dd-9ad5-686922e9603e"))
-(wire (pts (xy 248.92 35.56) (xy 269.24 35.56)) (stroke (width 0) (type default)) (uuid "a023b251-1801-4589-b3c4-1a8826cfa2a0"))
-(wire (pts (xy 269.24 35.56) (xy 297.18 35.56)) (stroke (width 0) (type default)) (uuid "c024e610-65ee-4b4c-907f-2753d219c8d1"))
-(wire (pts (xy 228.6 45.72) (xy 234.95 45.72)) (stroke (width 0) (type default)) (uuid "8e469933-e074-4625-a029-5aec87bbf13b"))
-(wire (pts (xy 234.95 45.72) (xy 241.3 45.72)) (stroke (width 0) (type default)) (uuid "659d9c3f-92aa-44c8-af77-013ecb712eba"))
-(wire (pts (xy 241.3 45.72) (xy 248.92 45.72)) (stroke (width 0) (type default)) (uuid "99f2d480-97b8-497f-a341-f0ef65660332"))
-(wire (pts (xy 248.92 45.72) (xy 269.24 45.72)) (stroke (width 0) (type default)) (uuid "1c030231-690e-430b-9225-f9ab5e35a205"))
-(wire (pts (xy 269.24 45.72) (xy 297.18 45.72)) (stroke (width 0) (type default)) (uuid "aabc3d42-11f7-4013-859b-22a8c5618dea"))
-(junction (at 234.95 35.56) (diameter 0) (color 0 0 0 0) (uuid "d1de5e85-8ee9-42de-a166-d4006e0569f9"))
-(junction (at 234.95 45.72) (diameter 0) (color 0 0 0 0) (uuid "ce7a9c39-0edb-4b08-a958-716d1b2503f4"))
-(junction (at 241.3 35.56) (diameter 0) (color 0 0 0 0) (uuid "50a92533-2986-4fba-8c3f-73b9bf82618b"))
-(junction (at 241.3 45.72) (diameter 0) (color 0 0 0 0) (uuid "bf05a3a5-47ec-44a6-b6ea-e98328c4fe9e"))
-(junction (at 248.92 35.56) (diameter 0) (color 0 0 0 0) (uuid "39d0b909-8cba-4b5f-82bf-e1310ddb0082"))
-(junction (at 248.92 45.72) (diameter 0) (color 0 0 0 0) (uuid "391a83e4-346a-4519-9740-7b078a97b1b2"))
-(junction (at 269.24 35.56) (diameter 0) (color 0 0 0 0) (uuid "29f685e2-6c1b-4918-9036-3d555d1aa43b"))
-(junction (at 269.24 45.72) (diameter 0) (color 0 0 0 0) (uuid "a973df0f-b8cd-43c9-add4-70245650a2f4"))
-(wire (pts (xy 269.24 35.56) (xy 269.24 36.83)) (stroke (width 0) (type default)) (uuid "31d7d1e3-ee92-4fc5-a0f2-db5702d7e21d"))
-(wire (pts (xy 269.24 44.45) (xy 269.24 45.72)) (stroke (width 0) (type default)) (uuid "a8254f47-3f6f-4c5b-9938-b4fdef2e30cf"))
-(global_label "DMX-VCC" (shape passive) (at 297.18 35.56 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2112a8d6-eb9a-4c3c-ad9d-5c13bbf87d0e"))
-(global_label "DMX-GND" (shape passive) (at 297.18 45.72 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "03babc6f-591c-4bd5-bbf1-8700c75b9edc"))
-(text "Regulated 5 V / 200 mA isolated supply" (exclude_from_sim no) (at 190.5 21.59 0) (effects (font (size 1.5748 1.5748)) (justify left top)) (uuid "870778b1-bed9-435f-8aa0-1159f320fd19"))
-(text "Primary +5V: 4.75-5.25 V. Keep GND isolated from DMX-GND.\nPlace C10/C11 at U7/U4; C12/C18 at U3 output." (exclude_from_sim no) (at 190.5 57.15 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "5fa64752-7fe9-4720-bd70-99dd8b89ad25"))
-(wire (pts (xy 200.66 127) (xy 205.74 127)) (stroke (width 0) (type default)) (uuid "6da288a5-4e7a-421b-b65e-0f8cd372bdc4"))
-(global_label "DMX-VCC" (shape passive) (at 205.74 127 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "8805167d-2ed7-4ee2-9ada-ddff555b4ecc"))
-(no_connect (at 224.79 111.76) (uuid "64384726-bb99-4b49-98a4-364de91e58b9"))
-(wire (pts (xy 148.59 132.08) (xy 154.94 132.08)) (stroke (width 0) (type default)) (uuid "1aca80ff-9b46-4482-b33d-dd266915afd1"))
-(wire (pts (xy 165.1 132.08) (xy 170.18 132.08)) (stroke (width 0) (type default)) (uuid "f73c156d-e53d-40c5-928d-923b9e1013af"))
-(wire (pts (xy 113.03 132.08) (xy 120.65 132.08)) (stroke (width 0) (type default)) (uuid "5c0f286b-01d2-475b-a3f2-18540f448e42"))
-(wire (pts (xy 120.65 132.08) (xy 133.35 132.08)) (stroke (width 0) (type default)) (uuid "54a79183-34cf-49fb-b606-870764e94d91"))
-(global_label "485/TX" (shape passive) (at 113.03 132.08 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "c7a8dff9-4d35-4d83-8cd6-e21018477076"))
-(wire (pts (xy 120.65 129.54) (xy 120.65 132.08)) (stroke (width 0) (type default)) (uuid "932362d2-a1e4-4282-b9cd-de69ba8fd64b"))
-(junction (at 120.65 132.08) (diameter 0) (color 0 0 0 0) (uuid "0b42762d-552b-48b8-8279-306a36769d1e"))
-(wire (pts (xy 120.65 119.38) (xy 120.65 115.57)) (stroke (width 0) (type default)) (uuid "0bc40de8-58de-42f5-ba65-a39ef6970ea4"))
-(global_label "3.3V" (shape passive) (at 120.65 115.57 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "bd50cf6a-a793-4b73-8dff-8f6c528ecea8"))
-(wire (pts (xy 140.97 124.46) (xy 140.97 123.19)) (stroke (width 0) (type default)) (uuid "75ce2c1d-ccc2-415c-b4b2-99b031805455"))
-(global_label "3.3V" (shape passive) (at 140.97 123.19 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "1b2d969f-3c9c-487c-be57-ab51951ec56f"))
-(wire (pts (xy 140.97 139.7) (xy 140.97 140.97)) (stroke (width 0) (type default)) (uuid "d43c63ce-5688-4ce2-b43c-d815572d1400"))
-(global_label "GND" (shape passive) (at 140.97 140.97 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "5a48b382-ec87-4f4b-907b-74932d87d837"))
-(no_connect (at 133.35 129.54) (uuid "900466aa-383f-41b6-980b-094a42044065"))
-(wire (pts (xy 115.57 146.05) (xy 115.57 143.51)) (stroke (width 0) (type default)) (uuid "a2f32286-54aa-4d91-9fc8-7be6681129f0"))
-(global_label "3.3V" (shape passive) (at 115.57 143.51 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "9e21e815-f41d-453e-ad33-73b3dc717676"))
-(wire (pts (xy 115.57 153.67) (xy 115.57 156.21)) (stroke (width 0) (type default)) (uuid "f5492b5f-e192-4670-b615-0895f3b12133"))
-(global_label "GND" (shape passive) (at 115.57 156.21 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b65a49ec-af2e-48f0-a0ae-140abd8e2653"))
-(text "3.3 V open-drain buffer drives 5 V optocoupler LED.\nR26 = 360R 1%: 7.01-14.73 mA worst-case;\n3.3 V supply >= 3.0 V. Place C17 at U11." (exclude_from_sim no) (at 120.65 156.21 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "f8a2467b-eba7-45d1-8d31-338e4ec6228b"))
-(no_connect (at 92.71 71.12) (uuid "964cedab-f3e4-4aeb-8eb1-a20ac0fab556"))
 )

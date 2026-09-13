@@ -1,14 +1,17 @@
-# Draft PCB layout constraints
+# Routed PCB and layout review
 
-**Draft placement only: the PCB is unrouted and is not ready for fabrication.**
-These are initial layout assumptions, not evidence of current capacity, thermal performance, isolation certification or enclosure fit. Updated 8 September 2026.
+**Routing complete; prototype qualification remains before production.**
+Updated 13 September 2026. Electrical and visual checks below apply to the saved
+board. They do not establish temperature rise, isolation certification or enclosure fit.
 
-![Top-side placement, Ethernet on the right](pcb-placement.png)
+![Top-side assembly, Ethernet on the right](pcb-placement.png)
 
-The board contains all 56 schematic components (R9 DNP) and four board-only
-mounting holes. Native KiCad 10 DRC reports **0 placement violations,
-0 schematic-parity issues, and 147 unconnected items**. Schematic ERC remains
-**0 errors / 0 warnings**, with its verified rule configuration preserved.
+The board contains all 56 schematic components (R9 DNP), four board-only mounting
+holes, **391 track segments, 85 vias and five copper zones**. Native KiCad 10 DRC
+after refilling and saving the zones reports **0 violations, 0 unconnected items
+and 0 schematic-parity issues**. Schematic ERC reports **0 errors / 0 warnings**
+with its existing rule configuration. Saved reports are in
+[validation](validation/README.md); see also the [copper preview](pcb-routing.png).
 
 ## Board and fabrication assumptions
 
@@ -17,7 +20,7 @@ mounting holes. Native KiCad 10 DRC reports **0 placement violations,
 - Two copper layers, **1.6 mm FR-4**, **2 oz finished copper on both sides**; components on the top side. Keep the bottom mostly available for return copper.
   The initial stackup records 0.07 mm copper per side and a 1.44 mm core;
   confirm the fabricator's finished stackup before ordering.
-- Initial ordinary routing: 0.25 mm signal width/clearance, 0.9/0.3 mm via
+- Ordinary routing: 0.25 mm minimum signal width/clearance, 0.9/0.3 mm via
   diameter/drill, and 0.5 mm copper clearance from board edges and routed cutouts.
   Power and isolation constraints override these ordinary values.
 - [JLCPCB capabilities](https://jlcpcb.com/capabilities/pcb-capabilities) list
@@ -35,30 +38,48 @@ electrical BOM and placement-file output.
 
 ## Power distribution
 
-The design input is **8 A maximum total from the external 5 V supply**. Place J1,
-F1 and the distribution junction together, with short routes to the branch fuses
-and output connectors. The main lighting current must not pass through U12 or U2.
+The design input is **8 A maximum total from the external 5 V supply**. J1 and F1
+feed a continuous front-layer bus along the fuse row. The lighting current stays
+upstream of U12 and U2. The controller and auxiliary circuits have separate
+branches from this bus.
 
-- Reserve **8–10 mm wide copper paths** for the main feed and return. These are
-  initial placement allowances; inspect every pad neck, thermal spoke and transition.
-- As a resistance estimate, a 100 mm long, 8 mm wide, 70 µm thick copper path
-  gives approximately 3.1 mΩ, 25 mV drop and 0.20 W at 8 A at room temperature.
-  A similar return doubles the loop drop. This excludes copper tolerances, heating,
-  fuse/contact resistance and local necks; it is **not a temperature-rise rating**.
-- Prefer pours and short same-layer paths. Avoid carrying 8 A through one via or
-  default narrow thermal spokes. If a layer change is necessary, reserve a broad
-  via array and verify its finished plating and current distribution.
-- Connect both solder pins of each Phoenix terminal pole with substantial copper. Keep lighting returns near their feeds and away from narrow MCU return paths.
-  J1, the lighting power/return poles and F1–F4 already have solid zone-connection
-  overrides; final pours and pad necks still require routing review.
-- Put F2/F3/F4 and their bulk capacitors near J3/J4/J5 respectively. Final branch
-  widths and actual fuse ratings depend on branch current, startup and fuse curves.
-- Keep primary +5 V within the specified 4.75–5.25 V at the board under load.
-  Place U12/C19/C20 on the separate controller feed and leave JP1 accessible.
+- The front bus is nominally **8 mm wide**, X=26…104, Y=48…56 mm. Inspection of
+  its actual filled polygon found one connected region and a **7.525 mm minimum
+  cross-section** along the F1-to-F4 path. The small reduction is beside the
+  bypass pads. No signal track or via cuts the bus.
+- Raw input and each fused output use **2.8 mm tracks on both copper layers**,
+  connecting both solder pins of every power-terminal pole. Fuse lands have solid
+  copper connections, rear spreading tracks and four nearby vias per fuse. The
+  main current is not forced through a single via or thin thermal spokes.
+- F2/F3/F4 sit beside J3/J4/J5 and C14/C15/C16. Each bulk capacitor has a 1.2 mm
+  charging spur and two ground vias. C7 feeds the controller through a separate
+  1 mm route; a 0.75 mm branch feeds the DMX converter/relay circuit. U12 remains
+  on the controller branch, with C19/C20 and removable JP1 nearby.
+- The six lighting data/clock outputs use short back-layer bridges across the
+  bus, then return to the front layer above it. This leaves the broad rear ground
+  return available between the input and lighting terminals. Each buffer and
+  bypass capacitor has a nearby ground via.
+- A named rule area, **Main 5V bus routing guard**, and custom DRC rule reject
+  foreign front-layer tracks and through vias in X=25.75…104.25,
+  Y=47.75…56.25 mm. A temporary witness board confirmed four deliberately
+  introduced violations; +5 V copper and back-layer signal tracks were allowed.
+- Integrating the filled bus cross-section at 70 µm copper and 20 °C gives about
+  **2.05 mΩ** from F1 to F4, or 16.4 mV at 8 A. This is a copper-only resistance
+  estimate, excluding fuse/contact resistance, pad transitions, cables and heating;
+  it is **not a temperature-rise or fuse-protection rating**.
+- Primary +5 V must remain within **4.75–5.25 V at the board under load**.
+  Confirm supply tolerance, cable drop, branch current and startup behavior on
+  the assembled prototype before selecting the four fuse ratings.
+
+J7's two floating camera contacts run to K3's **NC and common** pins on 2 mm
+tracks on both faces. Q1's emitter has a dedicated 0.4 mm ground path and via;
+U11's ground has its own 0.3 mm path and via. The camera circuit does not connect
+to primary or DMX ground. The relay's headline current rating does not establish
+its NC-contact DC rating; qualify it against the actual camera supply/load/inrush.
 
 ## Isolated DMX region
 
-The isolated DMX island occupies the lower-right region. Its proposed **L-shaped copper keepout** consists of a vertical strip **X=82.85…85.85, Y=116.5…150 mm** and a horizontal strip **X=82.85…120, Y=116.5…119.5 mm**, on both copper layers. U3 and U7 straddle the vertical boundary at X=84.35 mm, with primary connections on the left.
+The routed DMX island occupies the lower-right region. Its **L-shaped copper keepout** consists of a vertical strip **X=82.85…85.85, Y=116.5…150 mm** and a horizontal strip **X=82.85…120, Y=116.5…119.5 mm**, on both copper layers. U3 and U7 straddle the vertical boundary at X=84.35 mm, with primary connections on the left.
 
 - Use **3.0 mm minimum primary-to-DMX copper separation** as the initial
   functional-isolation layout assumption. Keep the separation on every copper layer;
@@ -69,8 +90,9 @@ The isolated DMX island occupies the lower-right region. Its proposed **L-shaped
 - U3's native footprint has only **3.58 mm** between the closest input/output pad
   edges; U7 has **7.53 mm** between pad rows. The 3 mm assumption fits these parts;
   a greater specified insulation requirement would need another review.
-- Group U4, its bypass capacitor, bias resistors and J6 within the isolated island.
-  Route A/B adjacent on the same layer, short and without long stubs. Leave R9 DNP.
+- U4, its bypass capacitor, bias resistors and J6 are grouped within the isolated
+  island. A/B are routed together on the front layer; R9 remains DNP. Both
+  isolated ground layers are filled, with local stitching at the bypass returns.
 
 ## Local decoupling and signal placement
 
@@ -82,7 +104,7 @@ The isolated DMX island occupies the lower-right region. Its proposed **L-shaped
 | C13 / U3 | Immediately beside the primary input pins. |
 | C17 / U11 | At U11 supply/ground; keep R26 and the optocoupler LED loop short. |
 | C19, C20 / U12 | Beside input/output and ground pins on the controller feed. |
-| U9/U10 bypass capacitors | At each device's supply pins; preserve nearby ground return. |
+| C8/C9 / U9/U10 | 100 nF, 0603; short supply spurs and ground vias immediately below the main bus. |
 
 [TI's THVD1500 layout guidance](https://www.ti.com/lit/ds/symlink/thvd1500.pdf)
 calls for local 100 nF bypassing and low-inductance supply/ground connections.
@@ -107,7 +129,21 @@ placing components underneath the module. Top-entry terminals need wire-bend and
 screwdriver access; fuse holders need overhead clearance for removal, not merely
 the estimated 17.5 mm installed height. Terminal installed height is 14.4 mm.
 
-## Before fabrication
+## Self-review and remaining qualification
+
+The saved assembly and copper previews were visually inspected for connector
+ordering, readable legends, component spacing, polarity and service access. All
+connector poles now have wiring labels; the 5 V input's GND/+5 V order is
+explicitly distinguished from the lighting outputs' +5 V/GND/D/C order. J7 is
+marked NC/COM and J6 GND/B/A. The USB shunt-removal instruction remains visible.
+Silkscreen height is at least 0.8 mm, and native checks report no silk overlaps.
+
+An independent comparison checked all 56 schematic references, 59 nets and 185
+electrical pin nodes against the placement checkpoint. Connectivity is unchanged;
+only C8/C9 sourcing/value changed to the common 100 nF part. Every PCB pad net,
+including duplicated Phoenix solder pins, matches the schematic. Filled copper,
+power-bus continuity, ground-via attachments and the camera contact routes were
+reviewed separately from the DRC result.
 
 The custom isolation rule was also checked on a separate temporary witness
 board with the same project settings: all four isolated-net patterns enforced
@@ -115,8 +151,8 @@ board with the same project settings: all four isolated-net patterns enforced
 All five deliberately introduced clearance violations were detected. This
 checks the rule configuration, not the insulation performance of an assembly.
 
-- Complete routing and zone fills; check connectivity, isolation clearances, all
-  power-path necks and copper continuity, then run board DRC.
+- Rerun DRC with zone refill and schematic parity after any PCB/schematic edit;
+  preserve the bus guard, isolation rules and reviewed power widths.
 - Confirm branch currents/fuses, copper temperature rise, supply drop and startup
   behavior; test the assembled prototype at the maximum intended load.
 - Check sockets, standoffs, antenna/connector access and enclosure dimensions with

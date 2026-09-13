@@ -1,10 +1,12 @@
 # Purchasing BOM and assembly items
 
-Prepared 8 September 2026 from the native KiCad `final.xml` export for schematic
-commit `f0294b7`, with the subsequently selected JP1 header/shunt recorded below.
+Reconciled 13 September 2026 against the native KiCad 10.0.0
+`current-20260913.xml` netlist, exported at 19:26:37 from the current schematic.
+This includes the C8/C9 100 nF bypass selection and the selected JP1 header/shunt.
 Quantities are **per completed carrier assembly**, before purchasing spares or
 assembly attrition. Grouping uses manufacturer part number, independent of the
-schematic's display value: C8/C9/C19/C20 and C10/C11/C12/C17 each form one group.
+schematic's display value: C8/C9/C10/C11/C12/C17 form the 100 nF group;
+C19/C20 form the 1 µF group.
 
 The schematic has **56 physical references: 40 fitted SMT, 14 fitted THT,
 one fitted Olimex module assembly, and one DNP resistor**. The 55 fitted
@@ -23,8 +25,8 @@ All rows in this table are **SMT assembly**. Total: **40 pieces, 19 MPN groups**
 | Qty | References | Component | Manufacturer | Exact MPN | Supplier / code |
 |---:|---|---|---|---|---|
 | 4 | C7, C14, C15, C16 | 470 µF, 16 V, ±20%, aluminum electrolytic | Honor Elec | `RVT1C471M0810` | LCSC `C3341` |
-| 4 | C8, C9, C19, C20 | 1 µF, 50 V, ±10%, X5R, 0603 | Samsung | `CL10A105KB8NNNC` | LCSC `C15849` |
-| 4 | C10, C11, C12, C17 | 100 nF, 50 V, ±10%, X7R, 0603 | Yageo | `CC0603KRX7R9BB104` | LCSC `C14663` |
+| 2 | C19, C20 | 1 µF, 50 V, ±10%, X5R, 0603 | Samsung | `CL10A105KB8NNNC` | LCSC `C15849` |
+| 6 | C8, C9, C10, C11, C12, C17 | 100 nF, 50 V, ±10%, X7R, 0603 | Yageo | `CC0603KRX7R9BB104` | LCSC `C14663` |
 | 1 | C13 | 4.7 µF, 16 V, ±10%, X5R, 0603 | Samsung | `CL10A475KO8NNNC` | LCSC `C19666` |
 | 1 | C18 | 10 µF, 25 V, ±10%, X5R, 0805 | Samsung | `CL21A106KAYNNNE` | LCSC `C15850` |
 | 2 | D1, D3 | Red 0805 indicator LED | Nationstar / 国星光电 | `NCD0805R1` | LCSC `C84256` |
