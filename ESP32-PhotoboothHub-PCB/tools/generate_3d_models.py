@@ -43,22 +43,47 @@ def phoenix_spt(poles):
     depth = 13.5
     height = 14.4
 
+    # KiCad maps the STEP model's +Y direction opposite to the footprint's
+    # +Y direction. Mirror the planar model coordinates so both physical
+    # pin rows (y=0 and y=8.2) line up with the footprint pads in 3D view.
+    def model_y(value):
+        return -value
+
     doc = App.newDocument(f"Phoenix_SPT_{poles}")
-    body = Part.makeBox(width, depth, height, App.Vector(x_min, y_min, 0))
+    body = Part.makeBox(
+        width,
+        depth,
+        height,
+        App.Vector(x_min, model_y(y_min + depth), 0),
+    )
 
     # Dimensionally representative top-entry openings.
     for pole in range(poles):
         x = pole * pitch
-        opening = Part.makeCylinder(1.0, 1.2, App.Vector(x, 1.15, height - 1.2))
+        opening = Part.makeCylinder(
+            1.0,
+            1.2,
+            App.Vector(x, model_y(1.15), height - 1.2),
+        )
         body = body.cut(opening)
     feature(doc, "Green_housing", body, (0.12, 0.55, 0.24))
 
     for pole in range(poles):
         x = pole * pitch
-        button = Part.makeBox(1.8, 2.2, 0.5, App.Vector(x - 0.9, 6.0, height))
+        button = Part.makeBox(
+            1.8,
+            2.2,
+            0.5,
+            App.Vector(x - 0.9, model_y(8.2), height),
+        )
         feature(doc, f"Actuator_{pole + 1}", button, (0.94, 0.48, 0.08))
         for row, y in enumerate((0.0, 8.2), start=1):
-            pin = Part.makeBox(0.8, 0.8, 2.5, App.Vector(x - 0.4, y - 0.4, -2.5))
+            pin = Part.makeBox(
+                0.8,
+                0.8,
+                2.5,
+                App.Vector(x - 0.4, model_y(y) - 0.4, -2.5),
+            )
             feature(doc, f"Pin_{pole + 1}_{row}", pin, (0.78, 0.78, 0.75))
 
     part_number = {2: "1990850", 3: "1990863", 4: "1990876"}[poles]
@@ -67,17 +92,38 @@ def phoenix_spt(poles):
 
 def optifuse_cnt06():
     doc = App.newDocument("OptiFuse_CNT_06")
-    body = Part.makeBox(11.6, 4.8, 9.6, App.Vector(-5.8, -3.6, 0))
+    # Mirror the planar STEP coordinates for KiCad's model Y convention.
+    # The footprint is later rotated for F1-F4, so this otherwise appears as
+    # a sideways body offset even though the two blade pads are symmetric.
+    def model_y(value):
+        return -value
+
+    body = Part.makeBox(
+        11.6,
+        4.8,
+        9.6,
+        App.Vector(-5.8, model_y(1.2), 0),
+    )
     # Show the two blade-entry slots without asserting an undimensioned internal profile.
     for x in (-2.45, 2.45):
-        slot = Part.makeBox(1.9, 0.7, 1.2, App.Vector(x - 0.95, -1.2, 8.8))
+        slot = Part.makeBox(
+            1.9,
+            0.7,
+            1.2,
+            App.Vector(x - 0.95, model_y(-0.5), 8.8),
+        )
         body = body.cut(slot)
     feature(doc, "Insulating_housing", body, (0.10, 0.10, 0.11))
 
     for number, x in enumerate((-2.45, 2.45), start=1):
         pin = Part.makeBox(1.6, 0.3, 4.6, App.Vector(x - 0.8, -0.15, -4.6))
         feature(doc, f"Terminal_{number}", pin, (0.78, 0.78, 0.74))
-    peg = Part.makeBox(2.7, 1.4, 2.0, App.Vector(-1.35, -3.4, -2.0))
+    peg = Part.makeBox(
+        2.7,
+        1.4,
+        2.0,
+        App.Vector(-1.35, model_y(-2.0), -2.0),
+    )
     feature(doc, "Retention_peg", peg, (0.10, 0.10, 0.11))
     export_document(doc, "OptiFuse_CNT-06_MICRO2.step")
 

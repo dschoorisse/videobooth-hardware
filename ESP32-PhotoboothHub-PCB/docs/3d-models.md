@@ -28,6 +28,12 @@ them with FreeCAD 1.1:
 & 'C:\Program Files\FreeCAD 1.1\bin\freecadcmd.exe' '.\tools\generate_3d_models.py'
 ```
 
+The Phoenix and OptiFuse STEP generators mirror their planar Y coordinates for
+KiCad's STEP model coordinate convention. This keeps the Phoenix 8.2 mm-spaced
+pin rows, the fuse-holder blade terminals and the housing envelopes aligned
+with their corresponding footprint geometry in the native 3D viewer. Do not
+replace these files with unmirrored exports.
+
 After replacing placed footprints from the library, reattach the local models
 with KiCad's bundled Python:
 

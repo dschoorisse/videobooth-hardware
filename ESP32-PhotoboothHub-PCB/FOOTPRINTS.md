@@ -39,18 +39,18 @@ electrical pads.
 The perimeter is an assembly guide: its overhang must not print beyond the
 carrier board edge on the silkscreen.
 **Dwgs.User** shows antenna/module and RJ45 overhang, plus mounting guides.
-The courtyard conservatively includes the assembly overhangs from the official
-Rev N1 PCB, not just the bare PCB. The upper overhang allows for the larger module
-outline in that reference CAD: U6 uses the selectable WROOM/WROVER module footprint
-named `ESP32-WROVER_MODULE`, whose drawing bounds extend 6.386 mm above the PCB
+For this stacked-carrier layout the large assembly envelope is intentionally kept
+on `Dwgs.User` rather than `F.CrtYd`: C19/C20 and U12 are low-profile SMD parts
+under the raised carrier, so a same-plane courtyard would report a false overlap.
+The upper overhang allows for the larger module outline in that reference CAD:
+U6 uses the selectable WROOM/WROVER module footprint named
+`ESP32-WROVER_MODULE`, whose drawing bounds extend 6.386 mm above the PCB
 (including the drawing stroke). The RJ45 body on F.Fab extends 8.143 mm below the
 PCB. Both projections are also visible in the official J+ mechanical drawing.
-The courtyard adds at least 0.5 mm around these bounds; its 113.85 mm length is
-the conservative assembly envelope, not the 98.15 mm bare board length. Confirm
-the fitted ESP32 module variant, physical socket height, access to the USB
-connector, RJ45 plug/cable access and antenna clearance during placement.
-No carrier copper keepout or connector insertion envelope is implied by these
-drawing guides.
+Confirm the fitted ESP32 module variant, physical socket/header height, underside
+component clearance, access to the USB connector, RJ45 plug/cable access and
+antenna clearance during placement. No carrier copper keepout or connector
+insertion envelope is implied by these drawing guides.
 
 The non-isolated ESP32-POE has the same header pad geometry and connector pin
 mapping in the official Rev M2 CAD, but an 80 mm body and a different lower

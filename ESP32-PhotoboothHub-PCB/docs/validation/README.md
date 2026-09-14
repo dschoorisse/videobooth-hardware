@@ -1,16 +1,17 @@
 # Routing validation — 14 September 2026
 
-KiCad 10.0.0 checked the saved project after the final zone refill.
+KiCad 10.0.0 checked the saved project after the compact U2-underlay placement
+and final zone refill.
 
 | Check | Result |
 |---|---|
-| [PCB DRC](pcb-drc.json) | 0 violations, 0 unconnected items, 0 schematic-parity issues |
+| [PCB DRC](compact-board-drc.json) | 0 violations, 0 unconnected items, 0 schematic-parity issues |
 | [Schematic ERC](schematic-erc.json) | 0 errors, 0 warnings |
 | Physical inventory | 56 schematic components, including DNP R9; four additional mounting holes |
-| Routed copper | 391 track segments, 85 through vias, five copper zones |
+| Routed copper | 402 track segments, 87 through vias, five copper zones |
 | Manufacturing rules | Minimum track/ordinary clearance 0.25 mm; vias 0.9/0.3 mm; copper-to-edge 0.5 mm |
 | Netlist comparison | All 59 nets and 185 electrical pin nodes match the placement checkpoint; only C8/C9 part metadata/value changed |
-| Visual review | Final native assembly/copper and 3D renderings checked for placement, model alignment, legends, polarity, service access and routed geometry |
+| Visual review | Updated compact 3D assembly render confirms Phoenix terminal model/pad alignment; native copper checks cover the saved layout; stacked SMD clearance still requires a physical socket/header check |
 
 Reports include their configured ignored checks. The existing ERC configuration
 and board severity settings were preserved; no finding was excluded to obtain
@@ -33,8 +34,13 @@ these results. The isolation rule and added main-bus guard remain enabled.
   is the ground-zone perimeter (3.0016 mm in the polygon calculation).
 - J7.1→K3.2 (NC) and J7.2→K3.5 (common) each use four 2 mm segments per face.
   These contact nets remain separate from both ground systems.
-- The final project tracks/vias and filled polygons were compared with the
-  independently reviewed candidate and found geometrically identical.
+- The compact placement shortens the carrier by 15 mm, moves the lower circuit
+  block and its ground vias, moves D3 clear of the JP1 service-power route, and
+  re-routes the +5 V, 3.3 V and camera-reset branches. Connectivity and the
+  reviewed power/isolation geometry remain unchanged. The large U2 mechanical
+  envelope remains on `Dwgs.User`; its
+  same-plane courtyard is intentionally omitted so the three low-profile SMDs
+  under the raised carrier are not treated as coplanar collisions.
 
 The bus resistance integral is approximately **2.05 mΩ**, using 70 µm copper
 and 20 °C resistivity of 1.724×10⁻⁸ Ωm. A resistor-sheet model of bottom GND alone

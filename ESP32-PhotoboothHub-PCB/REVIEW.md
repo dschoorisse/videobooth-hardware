@@ -5,7 +5,7 @@ Updated 2026-09-14 against imported baseline commit `b2cbc42` and placement chec
 The fixes are implemented. KiCad 10 ERC reports **zero errors and zero warnings**
 with the existing rule configuration. All 56 physical component instances,
 including DNP R9, have loadable footprints with matching electrical pad numbers.
-The **116 × 130 mm PCB is fully routed**, with Ethernet on the right. Native PCB
+The **116 × 113.5 mm PCB is fully routed**, with Ethernet on the right. Native PCB
 DRC after filling and saving all zones reports **zero violations, zero unconnected
 items and zero schematic-parity issues**. The layout and actual filled copper
 have also been visually and independently reviewed. Prototype thermal testing,
@@ -29,6 +29,8 @@ The external DIN rail camera converter is outside this review.
 | Connectors | Seven Phoenix Contact SPT vertical wire-entry terminal blocks with verified project-local footprints. |
 | Fuses | F1–F4 use compact vertical OptiFuse CNT-06 holders; actual fuse current ratings remain TBD. |
 | Module footprint | Olimex header spacing, pin mapping, outline and mounting guides verified from manufacturer files. |
+| Compact stacked placement | C19/C20 (0603) and U12 (SOT-23-5) moved under the raised U2 carrier; all SMDs remain on F.Cu and no SMD is placed on B.Cu. |
+| Carrier compaction | USB service-access band removed for the confirmed pre-install USB flashing workflow; lower block compressed by 15 mm to a 116 × 113.5 mm carrier, with local +5 V/3.3 V/reset rerouting validated by DRC. |
 | Import cleanup | Footprints, pin types, intentional NCs, references and overlapping drawing frames repaired. |
 
 ## Controller power and 3.3 V
