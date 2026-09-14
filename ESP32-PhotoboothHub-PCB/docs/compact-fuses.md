@@ -41,6 +41,11 @@ The fuse drawing gives 15.3 mm total nominal height with 7.4 mm exposed blade le
 
 Treat the holders as **manually fitted through-hole parts**, and insert the fuses after soldering. Current JLCPCB stock/Basic classification for CNT-06 has not been established; no automatic-assembly or zero-extra-fee claim is made. Confirm availability and assembly handling when requesting the fabrication quote.
 
+A project-local STEP model reproduces the 11.6 × 4.8 × 9.6 mm holder body,
+terminal positions/projection and retention peg. Its blade-entry slots are
+representative because the manufacturer does not dimension the internal contact
+shape. The separately purchased fuse is not included in this holder model.
+
 The verified local `Fuseholder_XFCN_PTF-77_P22.50mm` remains a legacy mechanical alternative, documented in `remaining-component-footprints.md`. Its presence in the footprint library does not mean it is assigned to the current design.
 
 ## Release checks

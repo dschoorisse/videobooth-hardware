@@ -43,7 +43,13 @@ confirms the three widths and order numbers.
 The three footprints contain 4, 6 and 8 physical pads for 2, 3 and 4 poles.
 The paired-pad positions are retained from the horizontal family, but body,
 height and access information were corrected for the vertical parts. The old
-horizontal footprints were removed from the project library. No 3D model is bundled.
+horizontal footprints were removed from the project library.
+
+Project-local STEP models are bundled for all three pole counts. They reproduce
+the verified body envelope, 14.4 mm installed height, 2.5 mm pins, paired-pad
+positions and representative top-entry openings. Cosmetic/internal spring details
+are intentionally simplified; the models are for placement and enclosure review,
+not manufacturing the terminals.
 
 ## Primary sources
 

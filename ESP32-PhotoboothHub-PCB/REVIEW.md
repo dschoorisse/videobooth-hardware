@@ -1,11 +1,11 @@
 # Schematic changes and release checks
 
-Updated 2026-09-13 against imported baseline commit `b2cbc42` and placement checkpoint `ed387a4`.
+Updated 2026-09-14 against imported baseline commit `b2cbc42` and placement checkpoint `ed387a4`.
 
 The fixes are implemented. KiCad 10 ERC reports **zero errors and zero warnings**
 with the existing rule configuration. All 56 physical component instances,
 including DNP R9, have loadable footprints with matching electrical pad numbers.
-The **100 × 130 mm PCB is fully routed**, with Ethernet on the right. Native PCB
+The **116 × 130 mm PCB is fully routed**, with Ethernet on the right. Native PCB
 DRC after filling and saving all zones reports **zero violations, zero unconnected
 items and zero schematic-parity issues**. The layout and actual filled copper
 have also been visually and independently reviewed. Prototype thermal testing,

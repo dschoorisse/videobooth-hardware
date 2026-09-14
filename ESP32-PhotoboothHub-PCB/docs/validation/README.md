@@ -1,4 +1,4 @@
-# Routing validation — 13 September 2026
+# Routing validation — 14 September 2026
 
 KiCad 10.0.0 checked the saved project after the final zone refill.
 
@@ -10,7 +10,7 @@ KiCad 10.0.0 checked the saved project after the final zone refill.
 | Routed copper | 391 track segments, 85 through vias, five copper zones |
 | Manufacturing rules | Minimum track/ordinary clearance 0.25 mm; vias 0.9/0.3 mm; copper-to-edge 0.5 mm |
 | Netlist comparison | All 59 nets and 185 electrical pin nodes match the placement checkpoint; only C8/C9 part metadata/value changed |
-| Visual review | Final native assembly/copper renderings checked for placement, legends, polarity, service access and routed geometry |
+| Visual review | Final native assembly/copper and 3D renderings checked for placement, model alignment, legends, polarity, service access and routed geometry |
 
 Reports include their configured ignored checks. The existing ERC configuration
 and board severity settings were preserved; no finding was excluded to obtain

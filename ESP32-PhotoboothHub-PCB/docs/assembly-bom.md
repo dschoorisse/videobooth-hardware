@@ -97,8 +97,8 @@ or duplicate the header/holder/module already counted above.
 | 1 | F2 | OptiFuse ANT/APT front-light fuse, exact suffix **TBD** | Branch load/inrush not yet specified. |
 | 1 | F3 | OptiFuse ANT/APT printer-light fuse, exact suffix **TBD** | Branch load/inrush not yet specified. |
 | 1 | F4 | OptiFuse ANT/APT down-light fuse, exact suffix **TBD** | Branch load/inrush not yet specified. |
-| 2 | U2 carrier connection | 1×10 female THT sockets, 2.54 mm pitch; MPN **TBD** | Rows are 25.40 mm apart. Select mating height, pin acceptance, tail geometry and plating together with module headers. Solder these to the carrier. |
-| 0 or 2 | U2 module connection | 1×10 male headers, 2.54 mm pitch; MPN **TBD** | Inspect the actual Olimex module: buy two only if suitable downward-facing headers are not already fitted. Solder to the module if required. |
+| 2 | U2 carrier connection | 1×10 female THT socket strips, 2.54 mm pitch, nominal 8.5 mm body height; MPN **TBD** | Intended removable mounting. Rows are 25.40 mm apart. Select pin acceptance, insertion depth, tail geometry and plating together with the module headers. Solder these sockets to the carrier. |
+| 0 or 2 | U2 module connection | 1×10 downward-facing male headers, 2.54 mm pitch; MPN **TBD** | Inspect the actual Olimex module: buy two only if suitable headers are not already fitted. Solder to the module if required; do not solder the module directly to the carrier. |
 | TBD | U2 mounting guides | Module standoffs, screws and related hardware | Select after socket stack height and fastening arrangement are fixed; do not infer a fastener kit from the drawing guides alone. |
 | TBD | Carrier mounting | Enclosure/DIN mounting hardware and carrier fasteners | Board mounting arrangement and enclosure not finalized. No screw length or spacer height selected. |
 | 1 | Carrier | Fabricated bare PCB | Supply approved layout/stackup and fabrication files when ready; artwork is not a purchased schematic component. |

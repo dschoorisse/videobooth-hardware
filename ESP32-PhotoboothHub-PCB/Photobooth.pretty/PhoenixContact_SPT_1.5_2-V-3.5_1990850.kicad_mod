@@ -19,4 +19,9 @@
   (pad "1" thru_hole circle (at 0 8.2) (size 2.4 2.4) (drill 1.2) (layers "*.Cu" "*.Mask"))
   (pad "2" thru_hole circle (at 3.5 0) (size 2.4 2.4) (drill 1.2) (layers "*.Cu" "*.Mask"))
   (pad "2" thru_hole circle (at 3.5 8.2) (size 2.4 2.4) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  (model "${KIPRJMOD}/Photobooth.3dshapes/PhoenixContact_SPT_1.5_2-V-3.5_1990850.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

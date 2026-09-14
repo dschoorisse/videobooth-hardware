@@ -90,7 +90,10 @@ The original EasyEDA footprint had one coil pad displaced by 0.127 mm from the
 other. Both coil pads now align on the manufacturer's 12.2 mm column spacing.
 Copper lands are 2.3 mm for contact pads and 1.8 mm for coil pads. Courtyard
 includes 0.5 mm beyond the stated undimensioned +/-0.4 mm body tolerance.
-No 3D model is referenced by either recovered footprint.
+The assigned BRD-SS-105L footprint now references a project-local simplified
+STEP model with the verified 19.0 × 15.4 × 15.5 mm body and all five pin
+positions. It is a mechanical envelope rather than a cosmetic manufacturer CAD
+model. The unused legacy XFCN fuse-holder footprint remains without a 3D model.
 
 [QLRELAY manufacturer datasheet, p. 3](https://www.lcsc.com/datasheet/lcsc_datasheet_2407031731_QLRELAY-BRD-SS-105L_C22384955.pdf).
 
