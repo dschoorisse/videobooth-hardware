@@ -6,10 +6,10 @@ board. They do not establish temperature rise, isolation certification or enclos
 
 ![Top-side assembly, Ethernet on the right](pcb-placement.png)
 
-![3D assembly with removable Olimex socket headers](pcb-3d-sockets.png)
+![Compact final 3D assembly with removable Olimex socket headers](pcb-3d-compact.png)
 
 The board contains all 56 schematic components (R9 DNP), four board-only mounting
-holes, **391 track segments, 85 vias and five copper zones**. Native KiCad 10 DRC
+holes, **402 track segments, 87 vias and five copper zones**. Native KiCad 10 DRC
 after refilling and saving the zones reports **0 violations, 0 unconnected items
 and 0 schematic-parity issues**. Schematic ERC reports **0 errors / 0 warnings**
 with its existing rule configuration. Saved reports are in
@@ -17,11 +17,14 @@ with its existing rule configuration. Saved reports are in
 
 ## Board and fabrication assumptions
 
-- Proposed carrier outline: **116 × 130 mm**, X=12…128 mm and Y=20…150 mm.
-- Proposed M3 carrier-hole centres: (24, 24), (116, 24), (24, 146), (116, 146) mm. Verify screw, washer and standoff envelopes; keep mounting hardware clear of copper on both layers, especially the lower-right hole within the DMX island.
+- Proposed carrier outline: **116 × 113.5 mm**, X=12…128 mm and Y=21…134.5 mm.
+- Proposed M3 carrier-hole centres: (24, 24), (116, 24), (24, 131), (116, 131) mm. Verify screw, washer and standoff envelopes; keep mounting hardware clear of copper on both layers, especially the lower-right hole within the DMX island.
 - Two copper layers, **1.6 mm FR-4**, **2 oz finished copper on both sides**; components on the top side. Keep the bottom mostly available for return copper.
   The initial stackup records 0.07 mm copper per side and a 1.44 mm core;
   confirm the fabricator's finished stackup before ordering.
+- All fitted SMD components remain on **F.Cu**. C19, C20 and U12 are the
+  deliberately stacked low-profile group below the raised U2 carrier; no SMD
+  parts are placed on B.Cu.
 - Ordinary routing: 0.25 mm minimum signal width/clearance, 0.9/0.3 mm via
   diameter/drill, and 0.5 mm copper clearance from board edges and routed cutouts.
   Power and isolation constraints override these ordinary values.
@@ -81,7 +84,7 @@ its NC-contact DC rating; qualify it against the actual camera supply/load/inrus
 
 ## Isolated DMX region
 
-The routed DMX island occupies the lower-right region. Its **L-shaped copper keepout** consists of a vertical strip **X=82.85…85.85, Y=116.5…150 mm** and a horizontal strip **X=82.85…120, Y=116.5…119.5 mm**, on both copper layers. U3 and U7 straddle the vertical boundary at X=84.35 mm, with primary connections on the left.
+The routed DMX island occupies the lower-right region. Its **L-shaped copper keepout** consists of a vertical strip **X=82.85…85.85, Y=116.5…134.5 mm** and a horizontal strip **X=82.85…120, Y=116.5…119.5 mm**, on both copper layers. U3 and U7 straddle the vertical boundary at X=84.35 mm, with primary connections on the left.
 
 - Use **3.0 mm minimum primary-to-DMX copper separation** as the initial
   functional-isolation layout assumption. Keep the separation on every copper layer;
@@ -117,7 +120,7 @@ Use short ground connections and multiple vias when a bypass loop changes layers
 U2 is rotated 90°, with origin (53.22, 96.71) mm: **antenna left, Ethernet right**.
 It is removable on two separate 1×10 female THT socket strips at 2.54 mm pitch;
 the Olimex module uses two matching downward-facing male header rows.
-The module PCB occupies **X=20…118.15, Y=70…98 mm**. Its antenna assembly extends left to **X=13.614 mm** and RJ45 body right to **X=126.293 mm**: the assembly spans approximately **112.7 mm**, before enclosure and cable clearances. The carrier outline is widened to X=12…128 mm. The complete conservative module courtyard occupies X=13.07…126.92 mm, leaving at least 1.07 mm to the FR-4 edge; no part of the module assembly projects beyond it.
+The module PCB occupies **X=20…118.15, Y=70…98 mm**. Its antenna assembly extends left to **X=13.614 mm** and RJ45 body right to **X=126.293 mm**: the assembly spans approximately **112.7 mm**, before enclosure and cable clearances. The carrier outline is widened to X=12…128 mm. The complete conservative module envelope occupies X=13.07…126.92 mm, leaving at least 1.07 mm to the FR-4 edge; no part of the module assembly projects beyond it. This envelope remains shown on `Dwgs.User`; U2 has no same-plane `F.CrtYd` boundary in this design because C19/C20/U12 are intentionally under the raised carrier.
 [Espressif recommends](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32/pcb-layout-design.html)
 antenna overhang and at least 15 mm antenna clearance in the finished product.
 Keep copper, components, cabling and enclosure metal away from the antenna region.
@@ -128,8 +131,8 @@ power/Ethernet end, X=78…119.5 mm and Y=69.5…99.5 mm, conservatively avoids
 carrier copper below that area until socket/standoff separation is confirmed.
 It is a project layout precaution, not a certified module insulation rating.
 
-Reserve **X=76…91, Y=98…117 mm** for USB service access; confirm the actual plug and cable fit. Keep the right-hand RJ45 plug/latch approach accessible. The module hole marks are guides, not carrier holes. Select socket height and standoffs before
-placing components underneath the module. Top-entry terminals need wire-bend and
+The carrier no longer reserves a USB service-access band: USB flashing is done on the bare Olimex module before it is inserted into the carrier headers, as specified for this build. Confirm USB access during pre-assembly, then keep the right-hand RJ45 plug/latch approach accessible. The module hole marks are guides, not carrier holes. Select socket height and standoffs before
+placing components underneath the module. The stacked group is limited to C19/C20 (0603) and U12 (SOT-23-5); verify the real socket/header underside clearance and keep all taller parts outside this zone. Top-entry terminals need wire-bend and
 screwdriver access; fuse holders need overhead clearance for removal, not merely
 the estimated 17.5 mm installed height. Terminal installed height is 14.4 mm.
 
@@ -143,10 +146,14 @@ samples before relying on fine cosmetic or internal clearances.
 ## Self-review and remaining qualification
 
 The saved assembly and copper previews were visually inspected for connector
-ordering, readable legends, component spacing, polarity and service access. All
+ordering, readable legends, component spacing, polarity and service access. The
+final stacked SMD change is checked by native PCB geometry and DRC; regenerate
+the previews and verify the real socket/header stack before production. All
 connector poles now have wiring labels; the 5 V input's GND/+5 V order is
 explicitly distinguished from the lighting outputs' +5 V/GND/D/C order. J7 is
-marked NC/COM and J6 GND/B/A. The USB shunt-removal instruction remains visible.
+marked NC/COM and J6 GND/B/A. The USB service-access drawings and redundant carrier
+instruction were removed; the electrical JP1 source-selection instruction remains in
+the schematic and review documentation.
 Silkscreen height is at least 0.8 mm, and native checks report no silk overlaps.
 
 An independent comparison checked all 56 schematic references, 59 nets and 185
